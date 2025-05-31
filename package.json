@@ -1,0 +1,20 @@
+{
+  "name": "portfoliov1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i src/input.css -o public/dist/output.css --watch",
+    "build": "tailwindcss -i src/input.css -o public/dist/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.4"
+  },
+  "description": "",
+  "dependencies": {
+    "tailwindcss": "3.4.1"
+  }
+}
