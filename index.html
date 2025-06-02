@@ -15,6 +15,19 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      .skills-item {
+        transition: all 0.3s ease;
+      }
+      .skills-item:hover {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+      }
+    </style>
     <title>Portfolio</title>
     <link href="output.css" rel="stylesheet" />
   </head>
@@ -78,20 +91,19 @@
       >
         <div class="flex flex-col w-full gap-8 md:flex-row">
           <!-- LEFT BOX: Name, Role, Links -->
+          <!-- Inside your LEFT BOX div -->
           <div class="flex-1">
             <p class="mt-6 mb-2 text-lg">I am</p>
-            <!-- Wrap heading in a div for card effect -->
             <div
               class="p-6 transition-all duration-300 rounded-lg shadow bg-gradient-to-r from-slate-800 to-zinc-700 hover:from-slate-900 hover:to-zinc-800"
             >
               <h1
-                class="text-4xl font-bold leading-tight text-white md:text-5xl font-heading"
+                class="text-4xl font-bold leading-tight tracking-wide text-white md:text-5xl font-heading"
               >
                 PRIYANSHU KUMAR <br />
                 SINGH
               </h1>
             </div>
-
             <p class="mt-2 text-xl text-slate-300">Full Stack Developer</p>
 
             <!-- Social Links (SVG version) -->
@@ -152,16 +164,117 @@
                 </svg>
               </a>
             </div>
+            <!-- Close social links div -->
           </div>
 
           <!-- RIGHT BOX: Intro -->
+          <div class="flex-1">
+            <div
+              class="h-full p-6 text-xl leading-relaxed transition-all duration-300 border rounded-lg shadow backdrop-blur-md bg-white/5 border-white/10 text-slate-300 hover:bg-gradient-to-tr hover:text-white"
+            >
+              A 2nd year BCA undergrad at DIT UNIVERSITY, Dehradun who builds
+              tools that automate, secure, and simplify the web. Passionate
+              about modern development, open source, and making technology more
+              human. Always learning. Always building.
+            </div>
+          </div>
+        </div>
+        <!-- Skills Strip with Icons -->
+        <div class="w-full mt-1rem">
           <div
-            class="flex-1 p-6 text-xl leading-relaxed transition-all duration-300 border rounded-lg shadow backdrop-blur-md bg-white/5 border-white/10 text-slate-300 hover:bg-gradient-to-tr hover:text-ellipsis hover:overflow-hidden hover:text-white"
+            class="max-w-4xl py-4 mx-auto mt-12 overflow-hidden rounded-lg border-y border-white/10 bg-white/5"
           >
-            A 2nd year BCA undergrad at DIT UNIVERSITY, Dehradun who builds
-            tools that automate, secure, and simplify the web. Passionate about
-            modern development, open source, and making technology more human.
-            Always learning. Always building.
+            <div
+              class="inline-flex items-center space-x-10 text-sm font-medium animate-marquee md:text-base text-white/90"
+            >
+              <!-- HTML -->
+              <div
+                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
+              >
+                <i class="text-xl text-orange-500 fab fa-html5"></i>
+                <span>HTML</span>
+              </div>
+
+              <!-- CSS -->
+              <div
+                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
+              >
+                <i class="text-xl text-blue-500 fab fa-css3-alt"></i>
+                <span>CSS</span>
+              </div>
+
+              <!-- JavaScript -->
+              <div
+                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
+              >
+                <i class="text-xl text-yellow-400 fab fa-js-square"></i>
+                <span>JavaScript</span>
+              </div>
+
+              <!-- Python -->
+              <div
+                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
+              >
+                <i class="text-xl text-blue-400 fab fa-python"></i>
+                <span>Python</span>
+              </div>
+
+              <!-- Flask -->
+              <div
+                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
+              >
+                <i class="text-xl text-gray-300 fas fa-flask"></i>
+                <span>Flask</span>
+              </div>
+
+              <!-- TypeScript -->
+              <div
+                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
+              >
+                <i class="text-xl text-blue-600 fas fa-code"></i>
+                <span>TypeScript</span>
+              </div>
+
+              <!-- GitHub -->
+              <div
+                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
+              >
+                <i class="text-xl text-white fab fa-github"></i>
+                <span>GitHub</span>
+              </div>
+
+              <!-- React -->
+              <div
+                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
+              >
+                <i class="text-xl fab fa-react text-cyan-400"></i>
+                <span>React</span>
+              </div>
+
+              <!-- Node.js -->
+              <div
+                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
+              >
+                <i class="text-xl text-green-500 fab fa-node-js"></i>
+                <span>Node.js</span>
+              </div>
+
+              <!-- MongoDB -->
+              <div
+                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
+              >
+                <i class="text-xl text-green-400 fas fa-database"></i>
+                <span>MongoDB</span>
+              </div>
+
+              <!-- Docker -->
+              <div
+                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
+              >
+                <i class="text-xl text-blue-400 fab fa-docker"></i>
+                <span>Docker</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
