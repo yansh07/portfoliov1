@@ -10,3 +10,47 @@ a:hover {
   color: white;
   transition: color 0.3s ease-in-out;
 }
+/* Smooth section transitions */
+section {
+  scroll-margin-top: 100px; /* Accounts for fixed nav */
+}
+
+/* Gradient border animation */
+@keyframes border-pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.animated-border {
+  animation: border-pulse 3s ease-in-out infinite;
+}
+/* Remove extra space around flex children */
+.flex-col-reverse > * + * {
+  margin-top: 0;
+}
+
+/* Compact paragraph spacing */
+p + p {
+  margin-top: 0.5rem; /* Instead of default 1rem */
+}
+/* Remove all unexpected margins */
+section + section {
+  margin-top: 0 !important;
+}
+
+/* Tighten line heights */
+.font-heading {
+  line-height: 1.2 !important;
+}
+
+/* Compact animation container */
+#lottie-container {
+  margin: -2px; /* Bleed into container */
+}

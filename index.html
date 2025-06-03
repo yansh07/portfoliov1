@@ -30,11 +30,12 @@
     </style>
     <title>Portfolio</title>
     <link href="output.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
   </head>
   <body
     class="bg-gradient-to-tr from-zinc-900 via-slate-950 to-gray-900 text-white/90 text-slate-400 font-body"
   >
-    <section>
+    <div>
       <!-- Nav -->
       <div>
         <header
@@ -108,7 +109,7 @@
 
             <!-- Social Links (SVG version) -->
             <div
-              class="flex gap-4 mt-6 transition-all duration-300 hover:gap-6"
+              class="flex gap-3 mt-6 transition-all duration-300 ease-in-out scale-100 hover:gap-6"
             >
               <!-- GitHub -->
               <a
@@ -180,16 +181,16 @@
           </div>
         </div>
         <!-- Skills Strip with Icons -->
-        <div class="w-full mt-1rem">
+        <div class="w-full">
           <div
-            class="max-w-4xl py-4 mx-auto mt-12 overflow-hidden rounded-lg border-y border-white/10 bg-white/5"
+            class="max-w-4xl py-3 mx-auto mt-12 overflow-hidden rounded-lg border-y border-white/10 bg-white/5"
           >
             <div
               class="inline-flex items-center space-x-10 text-sm font-medium animate-marquee md:text-base text-white/90"
             >
               <!-- HTML -->
               <div
-                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
+                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125 hover:text-ease-in-out hover:font-bold"
               >
                 <i class="text-xl text-orange-500 fab fa-html5"></i>
                 <span>HTML</span>
@@ -278,6 +279,42 @@
           </div>
         </div>
       </section>
-    </section>
+    </div>
+    <div>
+      <div
+        class="flex flex-col-reverse items-center justify-between w-full max-w-6xl gap-4 px-4 mx-auto mt-10 md:mt-6 md:gap-6 md:flex-row-reverse lg:-mt-16"
+      ></div>
+
+      <div
+        class="flex flex-col-reverse items-center justify-between w-full max-w-6xl px-6 mx-auto -mt-24 space-y-8 md:flex-row-reverse md:space-y-0 md:space-x-12"
+      >
+        <!-- Avatar Image Container (Right) -->
+        <div class="flex-1 w-full max-w-md">
+          <div class="pt-6 h-[360px] flex items-center justify-center">
+            <img
+              src="/images/avatar.png"
+              alt="Avatar"
+              class="object-contain w-full h-full"
+            />
+          </div>
+        </div>
+
+        <!-- About Text (Left) -->
+        <div class="flex-1">
+          <h2
+            class="mb-3 text-2xl font-semibold text-white sm:text-2xl md:text-2xl lg:text-4xl font-heading md:mb-6 md:leading-tight"
+            id="about-me"
+          >
+            What I do?
+          </h2>
+          <p class="text-base leading-snug text-slate-300 md:text-lg">
+            I'm a second-year BCA undergrad at DIT University, Dehradun,
+            building tools that automate, secure, and simplify the web.
+            Passionate about modern development, open source, and making
+            technology more human. Always learning. Always building.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
