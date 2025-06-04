@@ -54,3 +54,62 @@ section + section {
 #lottie-container {
   margin: -2px; /* Bleed into container */
 }
+/* Ensure strip doesn't get too narrow */
+@media (max-width: 400px) {
+  .load-more-strip {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .load-more-strip span {
+    font-size: 1rem;
+  }
+}
+/* For mobile/small screens - keep the current gap */
+.avatar-container {
+  margin-top: 20px; /* or whatever looks good on mobile */
+}
+
+/* For desktop screens - reduce the gap */
+@media (min-width: 768px) {
+  .avatar-container {
+    margin-top: 10px; /* adjust this value as needed */
+  }
+}
+/* Base styles for project cards (mobile first) */
+.project-card {
+  width: 100%;
+  margin-bottom: 20px;
+  /* other styles... */
+}
+
+/* Desktop styles */
+@media (min-width: 992px) {
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .project-card {
+    width: 100%;
+    height: 400px; /* adjust based on your image aspect ratio */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-image {
+    height: 200px; /* fixed height for images */
+    object-fit: cover; /* ensures images maintain aspect ratio */
+    width: 100%;
+  }
+
+  .project-content {
+    flex: 1;
+    padding: 15px;
+  }
+
+  .load-more-btn {
+    grid-column: 1 / -1;
+    margin-top: 20px;
+  }
+}
