@@ -113,3 +113,6 @@ section + section {
     margin-top: 20px;
   }
 }
+.blur-text-animation {
+  @apply animate-blur-text;
+}
