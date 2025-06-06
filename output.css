@@ -685,20 +685,20 @@ video {
   inset-inline-end: 0.25rem;
 }
 
-.left-1\/2 {
-  left: 50%;
-}
-
-.top-4 {
-  top: 1rem;
-}
-
 .left-0 {
   left: 0px;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.top-4 {
+  top: 1rem;
 }
 
 .isolate {
@@ -950,10 +950,6 @@ video {
   height: 100%;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .w-32 {
   width: 8rem;
 }
@@ -980,10 +976,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .max-w-4xl {
