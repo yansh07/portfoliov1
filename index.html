@@ -40,18 +40,16 @@
     <link rel="icon" href="./images/logo.ico" type="image/x-icon" />
     <link href="output.css" rel="stylesheet" />
   </head>
-  <body
-    class="bg-gradient-to-tr from-zinc-900 via-slate-950 to-gray-900 text-white/90 text-slate-400 font-body"
-  >
+  <body class="bg-[#0c0202] text-white font-body">
     <div>
       <header
         class="fixed z-50 w-full px-4 transform -translate-x-1/2 top-4 left-1/2 sm:px-6"
       >
         <nav
-          class="max-w-4xl mx-auto border shadow-md backdrop-blur-md bg-white/10 border-white/10 rounded-xl"
+          class="max-w-4xl mx-auto border shadow-md backdrop-blur-md bg-white/5 border-white/15 rounded-xl"
         >
           <ul
-            class="flex flex-wrap items-center justify-center gap-4 py-4 text-sm font-medium sm:gap-6 md:gap-8 sm:text-base md:text-lg text-slate-200"
+            class="flex flex-wrap items-center justify-center gap-4 py-4 text-sm font-light sm:gap-6 md:gap-8 sm:text-base md:text-lg text-slate-200"
           >
             <li>
               <a
@@ -92,61 +90,58 @@
         </nav>
       </header>
 
-      <section
-        id="home"
-        class="pt-[5.5rem] flex flex-col items-start px-6 py-16 md:px-20 md:py-32"
-      >
-        <div class="flex flex-col w-full gap-8 md:flex-row">
-          <div class="flex-1">
-            <p class="mt-6 mb-2 text-lg">I am</p>
-            <div
-              class="p-6 transition-all duration-300 rounded-lg shadow bg-gradient-to-r from-slate-800 to-zinc-700 hover:from-slate-900 hover:to-zinc-800"
-            >
-              <h1
-                class="text-4xl font-bold leading-tight tracking-wide text-white md:text-5xl font-heading"
-              >
-                PRIYANSHU KUMAR <br />
-                SINGH
-              </h1>
+      <section id="home" class="pt-[5.5rem]">
+        <div
+          class="container grid grid-cols-1 gap-8 px-6 py-8 mx-auto md:grid-cols-2 md:px-20 md:py-16 md:gap-28 lg:px-48"
+        >
+          <div class="flex flex-col justify-between gap-6">
+            <div>
+              <p class="text-lg text-slate-300">I am</p>
+              <div class="p-2">
+                <h1
+                  class="text-4xl font-bold leading-tight tracking-wide text-white md:text-5xl font-heading"
+                >
+                  PRIYANSHU KUMAR <br />
+                  SINGH
+                </h1>
+              </div>
+              <p class="mt-2 text-xl text-slate-300">Full Stack Developer</p>
             </div>
 
-            <p class="mt-2 text-xl text-slate-300">Full Stack Developer</p>
-
-            <div
-              class="flex gap-3 mt-6 transition-all duration-300 ease-in-out scale-100 hover:gap-6"
-            >
+            <div class="flex gap-4">
               <a
                 href="https://github.com/yansh07"
-                class="p-2 transition border rounded-lg shadow backdrop-blur-md bg-white/10 border-white/10 hover:bg-white/20"
+                class="p-2 transition border rounded-lg shadow backdrop-blur-md bg-white/5 border-white/50 hover:bg-white/10 hover:scale-105"
                 aria-label="GitHub"
               >
-                <i class="text-4xl text-black-500 fab fa-github"></i>
+                <i
+                  class="text-3xl text-black-500 fab fa-github sm:text-4xl"
+                ></i>
               </a>
-
               <a
                 href="https://www.linkedin.com/in/priyanshu-kumar-singh-34560816b/"
-                class="p-2 transition border rounded-lg shadow backdrop-blur-md bg-white/10 border-white/10 hover:bg-white/20"
+                class="p-2 transition border rounded-lg shadow backdrop-blur-md bg-white/5 border-white/50 hover:bg-white/10 hover:scale-105"
                 aria-label="LinkedIn"
               >
-                <i class="text-4xl text-black-500 fab fa-linkedin"></i>
+                <i
+                  class="text-3xl text-black-500 fab fa-linkedin sm:text-4xl"
+                ></i>
               </a>
-
               <a
                 href="mailto:pksingh69313@gmail.com"
-                class="p-2 transition border rounded-lg shadow backdrop-blur-md bg-white/10 border-white/10 hover:bg-white/20"
+                class="p-2 transition border rounded-lg shadow backdrop-blur-md bg-white/5 border-white/50 hover:bg-white/10 hover:scale-105"
                 aria-label="Email"
               >
                 <i
-                  class="text-4xl text-black-500 fa fa-envelope"
-                  aria-hidden="true"
+                  class="text-3xl text-black-500 fa fa-envelope sm:text-4xl"
                 ></i>
               </a>
             </div>
           </div>
 
-          <div class="flex-1">
+          <div class="flex items-center justify-center">
             <div
-              class="h-full p-6 text-xl leading-relaxed transition-all duration-300 border rounded-lg shadow backdrop-blur-md bg-white/5 border-white/10 text-slate-300 hover:bg-gradient-to-tr hover:text-white"
+              class="w-full p-6 text-base leading-relaxed text-white transition-all bg-black border rounded-lg shadow backdrop-blur-md border-white/50 md:text-xl"
             >
               A 2nd year BCA undergrad at DIT UNIVERSITY, Dehradun who builds
               tools that automate, secure, and simplify the web. Passionate
@@ -155,86 +150,99 @@
             </div>
           </div>
         </div>
-        <div class="w-full">
+
+        <div class="container max-w-4xl mx-auto lg:mb-14">
           <div
-            class="max-w-4xl py-3 mx-auto mt-12 overflow-hidden rounded-lg border-y border-white/10 bg-white/5"
+            class="p-4 overflow-hidden rounded-lg border-y border-white/5 bg-white/5"
           >
             <div
               class="inline-flex items-center space-x-10 text-sm font-medium animate-marquee md:text-base text-white/90 whitespace-nowrap"
             >
-              <div
-                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125 hover:text-ease-in-out hover:font-bold will-change-transform"
-              >
+              <div class="flex items-center gap-2">
                 <i class="text-xl text-orange-500 fab fa-html5"></i>
                 <span>HTML</span>
               </div>
-
-              <div
-                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
-              >
+              <div class="flex items-center gap-2">
                 <i class="text-xl text-blue-500 fab fa-css3-alt"></i>
                 <span>CSS</span>
               </div>
-
-              <div
-                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
-              >
+              <div class="flex items-center gap-2">
                 <i class="text-xl text-yellow-400 fab fa-js-square"></i>
                 <span>JavaScript</span>
               </div>
-
-              <div
-                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
-              >
+              <div class="flex items-center gap-2">
                 <i class="text-xl text-blue-400 fab fa-python"></i>
                 <span>Python</span>
               </div>
-
-              <div
-                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
-              >
+              <div class="flex items-center gap-2">
                 <i class="text-xl text-gray-300 fas fa-flask"></i>
                 <span>Flask</span>
               </div>
-
-              <div
-                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
-              >
+              <div class="flex items-center gap-2">
                 <i class="text-xl text-blue-600 fas fa-code"></i>
                 <span>TypeScript</span>
               </div>
-
-              <div
-                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
-              >
+              <div class="flex items-center gap-2">
                 <i class="text-xl text-white fab fa-github"></i>
                 <span>GitHub</span>
               </div>
-
-              <div
-                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
-              >
+              <div class="flex items-center gap-2">
                 <i class="text-xl fab fa-react text-cyan-400"></i>
                 <span>React</span>
               </div>
-
-              <div
-                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
-              >
+              <div class="flex items-center gap-2">
                 <i class="text-xl text-green-500 fab fa-node-js"></i>
                 <span>Node.js</span>
               </div>
-
-              <div
-                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
-              >
+              <div class="flex items-center gap-2">
                 <i class="text-xl text-green-400 fas fa-database"></i>
                 <span>MongoDB</span>
               </div>
-
-              <div
-                class="flex items-center gap-2 transition-all hover:scale-110 hover:brightness-125"
-              >
+              <div class="flex items-center gap-2">
+                <i class="text-xl text-blue-400 fab fa-docker"></i>
+                <span>Docker</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="text-xl text-orange-500 fab fa-html5"></i>
+                <span>HTML</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="text-xl text-blue-500 fab fa-css3-alt"></i>
+                <span>CSS</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="text-xl text-yellow-400 fab fa-js-square"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="text-xl text-blue-400 fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="text-xl text-gray-300 fas fa-flask"></i>
+                <span>Flask</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="text-xl text-blue-600 fas fa-code"></i>
+                <span>TypeScript</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="text-xl text-white fab fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="text-xl fab fa-react text-cyan-400"></i>
+                <span>React</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="text-xl text-green-500 fab fa-node-js"></i>
+                <span>Node.js</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="text-xl text-green-400 fas fa-database"></i>
+                <span>MongoDB</span>
+              </div>
+              <div class="flex items-center gap-2">
                 <i class="text-xl text-blue-400 fab fa-docker"></i>
                 <span>Docker</span>
               </div>
@@ -254,7 +262,7 @@
               My Resume
             </h2>
             <div
-              class="mt-6 h-[360px] sm:p-8 flex items-center justify-center hover:ease-in-out hover:scale-105 hover:scale-x-105 transition-all duration-300 lg:h-[400px] rounded-lg shadow-lg bg-gradient-to-br from-gray-700 to-zinc-900 border border-white/10"
+              class="mt-6 h-[360px] sm:p-8 flex items-center justify-center hover:ease-in-out hover:scale-105 hover:scale-x-105 transition-all duration-300 lg:h-[400px] rounded-lg shadow-lg bg-black border border-white/50"
             >
               <a href="./images/Priyanshu_Kumar_Resume.pdf" target="_blank">
                 <img
@@ -270,11 +278,9 @@
               <h2 class="mb-6 text-3xl font-bold text-white font-heading">
                 What I do?
               </h2>
-              <div
-                class="px-6 py-4 border border-gray-700 rounded-xl bg-zinc-900"
-              >
+              <div class="px-6 py-4 bg-black border border-white/50 rounded-xl">
                 <button
-                  class="flex items-center justify-between w-full font-semibold text-left text-white"
+                  class="flex items-center justify-between w-full font-semibold text-left text-slate-200"
                   onclick="toggleAccordion(this)"
                 >
                   <span>💻 Tame the machines, one script at a time</span>
@@ -308,11 +314,9 @@
                   </p>
                 </div>
               </div>
-              <div
-                class="px-5 py-4 border border-gray-700 rounded-xl bg-zinc-900"
-              >
+              <div class="px-5 py-4 bg-black border border-white/50 rounded-xl">
                 <button
-                  class="flex items-center justify-between w-full font-semibold text-left text-white"
+                  class="flex items-center justify-between w-full font-semibold text-left text-slate-200"
                   onclick="toggleAccordion(this)"
                 >
                   <span>🧠 Listen to Internet's Whispers</span>
@@ -346,11 +350,9 @@
                   </p>
                 </div>
               </div>
-              <div
-                class="px-5 py-4 border border-gray-700 rounded-xl bg-zinc-900"
-              >
+              <div class="px-5 py-4 bg-black border border-white/50 rounded-xl">
                 <button
-                  class="flex items-center justify-between w-full font-semibold text-left text-white"
+                  class="flex items-center justify-between w-full font-semibold text-left text-slate-200"
                   onclick="toggleAccordion(this)"
                 >
                   <span>🎮 Design interfaces that breathe, Not just blink</span>
@@ -415,7 +417,7 @@
           <a
             href="https://github.com/yansh07/basic-port-scanner"
             target="_blank"
-            class="group relative block p-6 text-center border border-white/10 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg h-full"
+            class="group relative block p-6 text-center border border-white/50 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg h-full"
           >
             <div
               class="relative w-full h-48 p-4 mb-4 overflow-hidden border border-gray-700 rounded-md bg-zinc-800"
@@ -449,7 +451,7 @@
           <a
             href="https://github.com/yansh07/AiAssistant"
             target="_blank"
-            class="group relative block p-6 text-center border border-white/10 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg h-full"
+            class="group relative block p-6 text-center border border-white/50 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg h-full"
           >
             <div
               class="relative w-full h-48 p-4 mb-4 overflow-hidden border border-gray-700 rounded-md bg-zinc-800"
@@ -483,7 +485,7 @@
           <a
             href="https://github.com/yansh07/basic-subdomain-enumerator"
             target="_blank"
-            class="group relative block p-6 text-center border border-white/10 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg h-full"
+            class="group relative block p-6 text-center border border-white/50 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg h-full"
           >
             <div
               class="relative w-full h-48 p-4 mb-4 overflow-hidden border border-gray-700 rounded-md bg-zinc-800"
@@ -518,7 +520,7 @@
           <a
             href="https://github.com/yansh07/web-scraper-bot"
             target="_blank"
-            class="group relative block p-6 text-center border border-white/10 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg h-full"
+            class="group relative block p-6 text-center border border-white/50 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg h-full"
           >
             <div
               class="relative w-full h-48 p-4 mb-4 overflow-hidden border border-gray-700 rounded-md bg-zinc-800"
@@ -553,7 +555,7 @@
 
         <div class="w-full mt-12">
           <div
-            class="max-w-4xl mx-auto transition-all duration-300 border rounded-lg shadow-lg border-white/10 backdrop-blur-md bg-white/5 hover:bg-white/10"
+            class="max-w-4xl mx-auto transition-all duration-300 border rounded-lg shadow-lg border-white/50 backdrop-blur-md bg-white/5 hover:bg-white/10"
           >
             <a
               href="https://github.com/yansh07"
@@ -594,7 +596,7 @@
           <a
             href="https://www.linkedin.com/in/priyanshu-kumar-singh-34560816b/"
             target="_blank"
-            class="group relative flex flex-col items-center p-4 border border-white/10 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg text-center"
+            class="group relative flex flex-col items-center p-4 border border-white/50 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg text-center"
           >
             <i class="mb-2 text-5xl text-black-500 fab fa-linkedin"></i>
             <h3 class="mb-1 text-lg font-bold text-white">LinkedIn</h3>
@@ -609,7 +611,7 @@
           <a
             href="https://x.com/yansh_08"
             target="_blank"
-            class="group relative flex flex-col items-center p-4 border border-white/10 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg text-center"
+            class="group relative flex flex-col items-center p-4 border border-white/50 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg text-center"
           >
             <i class="mb-2 text-5xl text-black-400 fab fa-twitter"></i>
             <h3 class="mb-1 text-lg font-bold text-white">X</h3>
@@ -622,7 +624,7 @@
           <a
             href=" https://github.com/yansh07"
             target="_blank"
-            class="group relative flex flex-col items-center p-4 border border-white/10 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg text-center"
+            class="group relative flex flex-col items-center p-4 border border-white/50 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg text-center"
           >
             <i class="mb-2 text-5xl text-black-300 fab fa-github"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Github</h3>
@@ -637,7 +639,7 @@
           <a
             href="https://yansh08.medium.com/"
             target="_blank"
-            class="group relative flex flex-col items-center p-4 border border-white/10 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg text-center"
+            class="group relative flex flex-col items-center p-4 border border-white/50 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg text-center"
           >
             <i class="mb-2 text-5xl text-white fab fa-medium"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Medium</h3>
@@ -652,7 +654,7 @@
           <a
             href="https://www.instagram.com/yansh.08?igsh=a2xtOGVyZ3EzajBo"
             target="_blank"
-            class="group relative flex flex-col items-center p-4 border border-white/10 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg text-center"
+            class="group relative flex flex-col items-center p-4 border border-white/50 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg text-center"
           >
             <i class="mb-2 text-5xl text-black-500 fab fa-instagram"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Instagram</h3>
@@ -667,7 +669,7 @@
           <a
             href="https://t.me/waytozero"
             target="_blank"
-            class="group relative flex flex-col items-center p-4 border border-white/10 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg text-center"
+            class="group relative flex flex-col items-center p-4 border border-white/50 rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg text-center"
           >
             <i class="mb-2 text-5xl fab fa-telegram" aria-hidden="true"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Telegram</h3>
@@ -719,21 +721,21 @@
               name="name"
               required
               placeholder="Your Name"
-              class="w-full p-2 pb-2 placeholder-gray-700 border rounded-lg shadow-lg placeholder:text-white font-body border-white/10 backdrop-blur-md bg-white/5 hover:bg-white/10 focus:outline-none focus:border-white"
+              class="w-full p-2 pb-2 placeholder-gray-700 border rounded-lg shadow-lg placeholder:text-white font-body border-white/50 backdrop-blur-md bg-white/5 hover:bg-white/10 focus:outline-none focus:border-white"
             />
             <input
               type="email"
               name="email"
               required
               placeholder="Your Email"
-              class="w-full p-2 pb-2 placeholder-gray-700 border rounded-lg shadow-lg placeholder:text-white font-body border-white/10 backdrop-blur-md bg-white/5 hover:bg-white/10 focus:outline-none focus:border-white"
+              class="w-full p-2 pb-2 placeholder-gray-700 border rounded-lg shadow-lg placeholder:text-white font-body border-white/50 backdrop-blur-md bg-white/5 hover:bg-white/10 focus:outline-none focus:border-white"
             />
             <textarea
               rows="4"
               name="message"
               required
               placeholder="Your Message"
-              class="w-full p-2 pb-2 placeholder-gray-700 border rounded-lg shadow-lg placeholder:text-white font-body border-white/10 backdrop-blur-md bg-white/5 hover:bg-white/10 focus:outline-none focus:border-white"
+              class="w-full p-2 pb-2 placeholder-gray-700 border rounded-lg shadow-lg placeholder:text-white font-body border-white/50 backdrop-blur-md bg-white/5 hover:bg-white/10 focus:outline-none focus:border-white"
             ></textarea>
 
             <!-- Submit Button -->
@@ -776,7 +778,7 @@
               <div class="flex gap-4 mb-8">
                 <a
                   href="https://github.com/yansh07"
-                  class="p-2 transition border rounded-lg shadow backdrop-blur-md bg-white/10 border-white/10 hover:bg-white/20"
+                  class="p-2 transition border rounded-lg shadow backdrop-blur-md bg-white/10 border-white/50 hover:bg-white/20"
                   aria-label="GitHub"
                 >
                   <svg
@@ -793,7 +795,7 @@
 
                 <a
                   href="https://www.linkedin.com/in/priyanshu-kumar-singh-34560816b/"
-                  class="p-2 transition border rounded-lg shadow backdrop-blur-md bg-white/10 border-white/10 hover:bg-white/20"
+                  class="p-2 transition border rounded-lg shadow backdrop-blur-md bg-white/10 border-white/50 hover:bg-white/20"
                   aria-label="LinkedIn"
                 >
                   <svg
@@ -810,7 +812,7 @@
 
                 <a
                   href="mailto:pksingh69313@gmail.com"
-                  class="p-2 transition border rounded-lg shadow backdrop-blur-md bg-white/10 border-white/10 hover:bg-white/20"
+                  class="p-2 transition border rounded-lg shadow backdrop-blur-md bg-white/10 border-white/50 hover:bg-white/20"
                   aria-label="Email"
                 >
                   <svg
@@ -861,11 +863,11 @@
                   <iframe
                     width="1200"
                     height="120"
-                    src="https://www.youtube.com/embed/videoseries?si=LgcmUeukZZs-pzPE&amp;list=PLblFJxIsmfNMBYATfNlBm3EDcauHzhZmR"
+                    src="https://www.youtube.com/embed/videoseries?si=drb_OEodbWSKR3vz&amp;list=PLblFJxIsmfNMBYATfNlBm3EDcauHzhZmR"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
+                    referrerpolicy="no-referrer-when-downgrade"
                     allowfullscreen
                     class="top-0 left-0 w-full h-full transition-transform duration-300 group-hover:scale-105"
                     loading="lazy"
@@ -896,7 +898,7 @@
           </div>
 
           <div
-            class="pt-8 mt-12 text-sm text-center border-t text-slate-500 border-white/10"
+            class="pt-8 mt-12 text-sm text-center border-t text-slate-500 border-white/50"
           >
             &copy; <span id="current-year"></span> Priyanshu Kumar Singh. All
             rights reserved.
