@@ -38,15 +38,16 @@
       /* Removed custom .project-card, .project-description, .project-tags styles */
     </style>
 
-    <title>firstflight</title>
-    <link rel="icon" href="./images/y-logo.ico" type="image/x-icon" />
+    <title>Priyanshu</title>
+    <link rel="icon" href="./images/logo.ico" type="image/x-icon" />
     <link href="output.css" rel="stylesheet" />
+    <!-- Add this inside <head> OR just before </body> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
   </head>
-  <body class="relative h-full text-white bg-slate-950 font-body">
-    <div
-      id="tsparticles"
-      class="fixed top-0 left-0 w-full h-screen -z-10"
-    ></div>
+  <body class="relative min-h-screen text-white bg-black font-body">
+    <div id="vanta-bg" class="fixed top-0 left-0 w-full h-full -z-10"></div>
+
     <div>
       <header
         class="fixed z-50 w-full px-4 transform -translate-x-1/2 top-4 left-1/2 sm:px-6"
@@ -147,7 +148,7 @@
 
           <div class="flex items-center justify-center">
             <div
-              class="w-full p-6 text-base leading-relaxed text-white transition-all border rounded-lg shadow backdrop:blur bg-white/5 backdrop-blur-md border-white/50 md:text-xl"
+              class="w-full p-6 text-base leading-relaxed text-white transition-all rounded-lg shadow backdrop:blur bg-white/5 backdrop-blur-md md:text-xl"
             >
               A 2nd year BCA undergrad at DIT UNIVERSITY, Dehradun who builds
               tools that automate, secure, and simplify the web. Passionate
@@ -159,7 +160,7 @@
 
         <div class="container max-w-4xl px-6 mt-4 lg:mx-auto lg:mb-14">
           <div
-            class="p-4 overflow-hidden rounded-lg border-y border-white/50 bg-white/5"
+            class="p-4 overflow-hidden rounded-lg border-white/50 bg-white/5"
           >
             <div
               class="inline-flex items-center space-x-10 text-sm font-medium animate-marquee md:text-base text-white/90 whitespace-nowrap"
@@ -262,21 +263,23 @@
           class="flex flex-col-reverse items-center justify-between w-full max-w-4xl px-6 mx-auto xl:-mt-44 md:items-start md:flex-row-reverse md:-mt-8 lg:-mt-44"
         >
           <div
-            class="flex-1 w-full max-w-md mt-8 sm:mt-8 md:space-x-10 md:-mt-2 lg:mt-24"
+            class="flex-1 w-full max-w-md mt-8 sm:mt-8 md:space-x-10 md:-mt-2 lg:mt-28"
           >
             <h2 class="text-3xl font-bold text-white font-heading md:px-10">
               My Resume
             </h2>
             <div
-              class="mt-6 h-[360px] sm:p-8 md:p-2 flex items-center justify-center hover:ease-in-out hover:scale-105 hover:scale-x-105 transition-all duration-300 lg:h-[400px] rounded-lg shadow-lg backdrop:blur bg-white/5 border border-white/50"
+              class="mt-6 h-[240px] sm:p-8 md:p-2 flex items-center justify-center lg:h-[230px] rounded-lg shadow-lg backdrop:blur bg-white/5 border border-white/50"
             >
-              <a href="./images/Priyanshu_Kumar_Resume.pdf" target="_blank">
+              <div
+                class="flex items-center justify-center w-full h-full overflow-hidden transition-all duration-300 hover:ease-in-out hover:scale-105 hover:scale-x-105"
+              >
                 <img
-                  src="./images/avatar.png"
+                  src="./images/avatarhoonmai.png"
                   alt="Avatar"
-                  class="object-contain w-full h-full"
+                  class="object-contain max-w-full max-h-full"
                 />
-              </a>
+              </div>
             </div>
           </div>
           <div class="flex-1 w-full">
@@ -793,7 +796,7 @@
                 <!-- GitHub -->
                 <a
                   href="https://github.com/yansh07"
-                  class="p-2 transition border rounded-lg shadow backdrop-blur-md bg-white/5 border-white/50"
+                  class="p-2 duration-300 border rounded-lg shadow backdrop-blur-md bg-white/5 border-white/50 hover:ease-in-out hover:scale-105 hover:scale-x-105"
                   aria-label="GitHub"
                 >
                   <i class="text-3xl text-white fab fa-github"></i>
@@ -801,7 +804,7 @@
                 <!-- LinkedIn -->
                 <a
                   href="https://www.linkedin.com/in/priyanshu-kumar-singh-34560816b/"
-                  class="p-2 transition border rounded-lg shadow backdrop-blur-md bg-white/5 border-white/50"
+                  class="p-2 duration-300 border rounded-lg shadow backdrop-blur-md bg-white/5 border-white/50 hover:ease-in-out hover:scale-105 hover:scale-x-105"
                   aria-label="LinkedIn"
                 >
                   <i class="text-3xl text-white fab fa-linkedin"></i>
@@ -809,7 +812,7 @@
                 <!-- Email -->
                 <a
                   href="mailto:pksingh69313@gmail.com"
-                  class="p-2 transition border rounded-lg shadow backdrop-blur-md bg-white/5 border-white/50"
+                  class="p-2 duration-300 border rounded-lg shadow backdrop-blur-md bg-white/5 border-white/50 hover:ease-in-out hover:scale-105 hover:scale-x-105"
                   aria-label="Email"
                 >
                   <i class="text-3xl text-white fa fa-envelope"></i>
@@ -819,19 +822,19 @@
               <!-- Stack Info -->
               <div class="space-y-2 text-sm">
                 <p
-                  class="flex items-center justify-center gap-2 md:justify-start"
+                  class="flex items-center justify-center gap-2 md:justify-start hover:text-white hover:ease-in-out"
                 >
                   Built with <i class="text-blue-400 fas fa-hammer"></i> Custom
                   HTML
                 </p>
                 <p
-                  class="flex items-center justify-center gap-2 md:justify-start"
+                  class="flex items-center justify-center gap-2 md:justify-start hover:text-white hover:ease-in-out"
                 >
                   Styled with
                   <i class="text-blue-500 fab fa-css3-alt"></i> Tailwind CSS
                 </p>
                 <p
-                  class="flex items-center justify-center gap-2 md:justify-start"
+                  class="flex items-center justify-center gap-2 md:justify-start hover:text-white hover:ease-in-out"
                 >
                   Deployed on <i class="text-green-400 fas fa-globe"></i> GitHub
                   Pages
@@ -938,7 +941,7 @@
         }
       });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-all"></script>
 
     <script>
@@ -962,6 +965,25 @@
         background: {
           color: "transparent", // transparent because Tailwind body already has bg
         },
+      });
+    </script> -->
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.net.min.js"></script>
+    <script>
+      VANTA.NET({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0xffffff,
+        backgroundColor: 0x0,
+        points: 20.0,
+        maxDistance: 10.0,
+        spacing: 11.0,
       });
     </script>
   </body>
