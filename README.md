@@ -45,4 +45,4 @@ Hey there!
 **[Reddit 🌐](https://www.reddit.com/user/swiftiiee69/)**  
 **[Medium ✍🏻](https://yansh08.medium.com/)**  
 **[Portfolio 💻](https://yansh07.github.io/portfoliov1/)**  
-**[Telegram ᯓ➤](https://t.me/pksinghji)**
+**[Telegram ᯓ➤](https://t.me/pksinghji)**  
