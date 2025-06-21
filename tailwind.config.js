@@ -77,8 +77,42 @@ module.exports = {
         "gradient-bg": "gradient-move 30s ease infinite", // This is for the animated background
       },
       fontFamily: {
-        heading: ["Montserrat", "sans-serif"],
-        body: ["Inter", "sans-serif"],
+        body: [
+          "system-ui",
+          "-apple-system", // macOS, iOS (San Francisco/New York)
+          "BlinkMacSystemFont", // Chromium on macOS
+          '"Segoe UI"', // Windows
+          "Roboto", // Android, ChromeOS, some Linux
+          "Oxygen", // KDE Plasma (Linux)
+          "Ubuntu", // Ubuntu Linux
+          "Cantarell", // GNOME (Linux)
+          '"Open Sans"', // Common web font
+          '"Helvetica Neue"', // Older macOS/iOS, common web font
+          "Arial", // Widely available fallback
+          "sans-serif", // Generic sans-serif fallback
+          '"Apple Color Emoji"', // Emoji support
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"',
+        ],
+        heading: [
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          '"Segoe UI"',
+          "Roboto",
+          "Oxygen",
+          "Ubuntu",
+          "Cantarell",
+          '"Open Sans"',
+          '"Helvetica Neue"',
+          "Arial",
+          "sans-serif",
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"',
+        ],
       },
     },
   },
