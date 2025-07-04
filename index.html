@@ -108,10 +108,9 @@
         class="fixed z-50 w-full px-4 transform -translate-x-1/2 top-4 left-1/2 sm:px-6"
       >
         <nav
-          class="max-w-4xl mx-auto transition-all duration-300 bg-transparent border rounded-xl border-white/20 backdrop-blur-md"
+          class="max-w-4xl mx-auto transition-all duration-200 bg-transparent border hover:ease-in-out hover:scale-95 rounded-xl border-white/20 backdrop-blur-md"
           style="
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
-              0 0 30px rgba(105, 71, 209, 0.2),
+            box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
               0 0 45px rgba(255, 255, 255, 0.1);
           "
         >
@@ -171,8 +170,13 @@
 
               <div class="sm:p-0">
                 <h1
-                  style="font-size: 2.25rem"
-                  class="inline-block px-4 py-3 mt-2 text-4xl font-bold leading-tight tracking-wide text-white bg-transparent border rounded-lg shadow-inner shadow-slate-400 backdrop-blur-md border-white/5 md:text-5xl font-heading sm:px-6 sm:py-4 md:px-4 md:py-5"
+                  style="
+                    font-size: 2.25rem;
+                    box-shadow: 0 0 10px #ffffff,
+                      0 0 30px rgba(105, 71, 209, 0.2),
+                      0 0 45px rgba(255, 255, 255, 0.1);
+                  "
+                  class="inline-block px-4 py-3 mt-2 text-4xl font-bold leading-tight tracking-wide text-white bg-transparent border rounded-lg backdrop-blur-md border-white/5 md:text-5xl font-heading sm:px-6 sm:py-4 md:px-4 md:py-5"
                 >
                   PRIYANSHU
                 </h1>
@@ -217,19 +221,35 @@
           </div>
 
           <!-- Right Column - Bio Card -->
-          <div class="flex items-center justify-center px-4 sm:px-8">
+          <div
+            class="flex items-center justify-center px-4 sm:px-8"
+            style="perspective: 1000px"
+          >
             <div
-              class="w-full max-w-md p-4 font-normal leading-tight text-white bg-transparent rounded-lg shadow-inner shadow-slate-400 text-spacing sm:text-xl md:font-normal lg:text-xl xl:text-xl sm:p-2 md:p-6 lg:p-8 border-white/5 backdrop-blur-md md:max-w-none lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+              class="relative w-full max-w-md p-4 font-normal leading-tight text-white transition-transform duration-500 ease-in-out bg-transparent rounded-lg tilt-box group text-spacing sm:text-xl md:font-normal lg:text-xl xl:text-xl sm:p-2 md:p-6 lg:p-8 border-white/5 backdrop-blur-md md:max-w-none lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl hover:translate-y-3"
+              style="
+                box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                  0 0 45px rgba(255, 255, 255, 0.1);
+              "
             >
-              Just another BCA kid trying to make peace with code,
-              consciousness, and chaos.<br />Into MERN stack and automation,
-              while exploring the philosophy, universe, and quantum world.
+              <div
+                class="transition-transform duration-500 ease-in-out group-hover:-translate-y-4"
+              >
+                Just another BCA kid trying to make peace with code,
+                consciousness, and chaos.<br />
+                Into MERN stack and automation, while exploring the philosophy,
+                universe, and quantum world.
+              </div>
             </div>
           </div>
         </div>
         <div class="container max-w-4xl px-4 mt-8 lg:mx-auto md:px-6 lg:mb-14">
           <div
-            class="p-4 overflow-hidden bg-transparent rounded-lg shadow-inner backdrop-blur-md border-white/50 shadow-slate-400"
+            class="p-4 overflow-hidden bg-transparent rounded-lg backdrop-blur-md border-white/50"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
             <div
               class="inline-flex items-center space-x-10 text-sm font-medium animate-marquee md:text-base text-white/90 whitespace-nowrap"
@@ -346,7 +366,11 @@
               My Resume
             </h2>
             <div
-              class="mt-6 flex items-center justify-center rounded-lg backdrop-blur-md bg-transparent shadow-inner shadow-slate-400 border border-white/20 md:h-[280px] lg:h-[220px]"
+              class="mt-6 flex items-center justify-center rounded-lg backdrop-blur-md bg-transparent border border-white/20 md:h-[280px] lg:h-[220px]"
+              style="
+                box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                  0 0 45px rgba(255, 255, 255, 0.1);
+              "
             >
               <div
                 class="overflow-hidden transition-transform duration-300 hover:scale-105"
@@ -516,147 +540,199 @@
           <a
             href="https://github.com/yansh07/basic-port-scanner"
             target="_blank"
-            class="relative block p-6 text-center duration-200 border shadow-inner group shadow-slate-400 border-white/20 rounded-xl hover:ease-in-out hover:scale-95"
+            class="relative block p-6 text-center transition-transform duration-200 ease-in-out border tilt-box group border-white/20 rounded-xl hover:scale-95"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
+            <!-- Card Content Wrapper (to lift on hover) -->
             <div
-              class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/20"
+              class="transition-transform duration-500 ease-in-out group-hover:-translate-y-2"
             >
-              <img
-                src="./images/port.webp"
-                alt="Port scanner Thumbnail"
-                class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
+              <div
+                class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/20"
+              >
+                <img
+                  src="./images/port.webp"
+                  alt="Port scanner Thumbnail"
+                  class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+
+              <h3 class="mb-2 text-xl font-bold text-white">Port Scanner</h3>
+              <p class="mb-4 text-base text-slate-300">
+                Built a python program to scan open ports on any system using
+                Nmap, which significantly reduces the scan time because of
+                threadpoolexecutor.
+              </p>
+
+              <div class="flex flex-wrap justify-center gap-2">
+                <span
+                  class="px-3 py-1 text-xs text-blue-400 rounded-full bg-blue-900/30"
+                  >Nmap</span
+                >
+                <span
+                  class="px-3 py-1 text-xs text-purple-400 rounded-full bg-purple-900/30"
+                  >Python</span
+                >
+              </div>
             </div>
 
-            <h3 class="mb-2 text-xl font-bold text-white">Port Scanner</h3>
-            <p class="mb-4 text-base text-slate-300">
-              Built a python program to scan open ports on any system using
-              Nmap, which significantly reduces the scan time because of
-              threadpoolexecutor.
-            </p>
-            <div class="flex flex-wrap justify-center gap-2">
-              <span
-                class="px-3 py-1 text-xs text-blue-400 rounded-full bg-blue-900/30"
-                >Nmap</span
-              >
-              <span
-                class="px-3 py-1 text-xs text-purple-400 rounded-full bg-purple-900/30"
-                >Python</span
-              >
-            </div>
-            <div class="absolute inset-0 bg-white/5 rounded-xl"></div>
+            <!-- Optional subtle overlay (can remove if not needed) -->
+            <div
+              class="absolute inset-0 pointer-events-none bg-white/5 rounded-xl"
+            ></div>
           </a>
 
           <a
             href="https://github.com/yansh07/AiAssistant"
             target="_blank"
-            class="relative block p-6 text-center duration-200 border shadow-inner shadow-slate-400 group border-white/20 rounded-xl hover:ease-in-out hover:scale-95"
+            class="relative block p-6 text-center transition-transform duration-200 ease-in-out border tilt-box group border-white/20 rounded-xl hover:scale-95"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
+            <!-- Content wrapper to make text lift on hover -->
             <div
-              class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/50 bg-blue-900/10"
+              class="transition-transform duration-500 ease-in-out group-hover:-translate-y-2"
             >
-              <img
-                src="./images/ai.webp"
-                alt="ai Thumbnail"
-                class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
+              <div
+                class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/50 bg-blue-900/10"
+              >
+                <img
+                  src="./images/ai.webp"
+                  alt="AI Thumbnail"
+                  class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+
+              <h3 class="mb-2 text-xl font-bold text-white">AI Assistant</h3>
+              <p class="mb-4 text-base text-slate-300">
+                Built a voice controlled AI Assistant, with wake word feature.
+                It saves your time by up to 60% by automating your Google search
+                and other small commands.
+              </p>
+
+              <div class="flex flex-wrap justify-center gap-2">
+                <span
+                  class="px-3 py-1 text-xs text-green-400 rounded-full bg-green-900/30"
+                  >Python</span
+                >
+                <span
+                  class="px-3 py-1 text-xs text-red-400 rounded-full bg-red-900/30"
+                  >OpenAI</span
+                >
+              </div>
             </div>
 
-            <h3 class="mb-2 text-xl font-bold text-white">AI Assistant</h3>
-            <p class="mb-4 text-base text-slate-300">
-              Built a voice controlled AI Assistant, with wake word feature. It
-              saves your time by upto 60% by automating your google search and
-              other small commands.
-            </p>
-            <div class="flex flex-wrap justify-center gap-2">
-              <span
-                class="px-3 py-1 text-xs text-green-400 rounded-full bg-green-900/30"
-                >Python</span
-              >
-              <span
-                class="px-3 py-1 text-xs text-red-400 rounded-full bg-red-900/30"
-                >Openai</span
-              >
-            </div>
-            <div class="absolute inset-0 bg-white/5 rounded-xl"></div>
+            <!-- Subtle overlay (optional visual glow) -->
+            <div
+              class="absolute inset-0 pointer-events-none bg-white/5 rounded-xl"
+            ></div>
           </a>
 
+          <!-- 🔎 Project Recon -->
           <a
             href="https://github.com/yansh07/basic-subdomain-enumerator"
             target="_blank"
-            class="relative block p-6 text-center duration-200 border shadow-inner shadow-slate-400 group border-white/20 rounded-xl hover:ease-in-out hover:scale-95"
+            class="relative block p-6 text-center transition-transform duration-200 ease-in-out border tilt-box group border-white/20 rounded-xl hover:scale-95"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
             <div
-              class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/50 bg-blue-900/10"
+              class="transition-transform duration-500 ease-in-out group-hover:-translate-y-2"
             >
-              <img
-                src="./images/subdomain.webp"
-                alt="Project Recon Thumbnail"
-                class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
-            </div>
-
-            <h3 class="mb-2 text-xl font-bold text-white">Project Recon</h3>
-            <p class="mb-4 text-base text-slate-300">
-              Built a Subdomain Enumeration Tool that discovers hidden
-              subdomains and IP Address of a given domain. It uses Python's
-              multithreading to reduce the scan time significantly.
-            </p>
-            <div class="flex flex-wrap justify-center gap-2">
-              <span
-                class="px-3 py-1 text-xs text-blue-400 rounded-full bg-blue-900/30"
-                >Cybersecurity</span
+              <div
+                class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/50 bg-blue-900/10"
               >
-              <span
-                class="px-3 py-1 text-xs text-purple-400 rounded-full bg-purple-900/30"
-                >Recon</span
-              >
+                <img
+                  src="./images/subdomain.webp"
+                  alt="Project Recon Thumbnail"
+                  class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="mb-2 text-xl font-bold text-white">Project Recon</h3>
+              <p class="mb-4 text-base text-slate-300">
+                Built a Subdomain Enumeration Tool that discovers hidden
+                subdomains and IP Address of a given domain. It uses Python's
+                multithreading to reduce the scan time significantly.
+              </p>
+              <div class="flex flex-wrap justify-center gap-2">
+                <span
+                  class="px-3 py-1 text-xs text-blue-400 rounded-full bg-blue-900/30"
+                  >Cybersecurity</span
+                >
+                <span
+                  class="px-3 py-1 text-xs text-purple-400 rounded-full bg-purple-900/30"
+                  >Recon</span
+                >
+              </div>
             </div>
-            <div class="absolute inset-0 bg-white/5 rounded-xl"></div>
+            <div
+              class="absolute inset-0 pointer-events-none bg-white/5 rounded-xl"
+            ></div>
           </a>
 
+          <!-- 🤖 Telegram Bot -->
           <a
             href="https://github.com/yansh07/web-scraper-bot"
             target="_blank"
-            class="relative block p-6 text-center duration-200 border shadow-inner shadow-slate-400 group border-white/20 rounded-xl hover:ease-in-out hover:scale-95"
+            class="relative block p-6 text-center transition-transform duration-200 ease-in-out border tilt-box group border-white/20 rounded-xl hover:scale-95"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
             <div
-              class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/50 bg-blue-900/10"
+              class="transition-transform duration-500 ease-in-out group-hover:-translate-y-2"
             >
-              <img
-                src="./images/bot.webp"
-                alt="Telegram Bot Thumbnail"
-                class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
-            </div>
-
-            <h3 class="mb-2 text-xl font-bold text-white">Telegram bot</h3>
-            <p class="mb-4 text-base text-slate-300">
-              A web scraper telegram bot that uses Playwright for browser
-              automation, data scrapping, and gives output to user through a
-              Telegram bot.
-            </p>
-            <div class="flex flex-wrap justify-center gap-2">
-              <span
-                class="px-3 py-1 text-xs text-green-400 rounded-full bg-green-900/30"
-                >Playwright</span
+              <div
+                class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/50 bg-blue-900/10"
               >
-              <span
-                class="px-3 py-1 text-xs text-red-400 rounded-full bg-red-900/30"
-                >Python</span
-              >
+                <img
+                  src="./images/bot.webp"
+                  alt="Telegram Bot Thumbnail"
+                  class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="mb-2 text-xl font-bold text-white">Telegram bot</h3>
+              <p class="mb-4 text-base text-slate-300">
+                A web scraper telegram bot that uses Playwright for browser
+                automation, data scrapping, and gives output to user through a
+                Telegram bot.
+              </p>
+              <div class="flex flex-wrap justify-center gap-2">
+                <span
+                  class="px-3 py-1 text-xs text-green-400 rounded-full bg-green-900/30"
+                  >Playwright</span
+                >
+                <span
+                  class="px-3 py-1 text-xs text-red-400 rounded-full bg-red-900/30"
+                  >Python</span
+                >
+              </div>
             </div>
-            <div class="absolute inset-0 bg-white/5 rounded-xl"></div>
+            <div
+              class="absolute inset-0 pointer-events-none bg-white/5 rounded-xl"
+            ></div>
           </a>
         </div>
 
         <div class="w-full mt-12">
           <div
-            class="max-w-4xl mx-auto transition-all duration-200 bg-transparent border rounded-lg shadow-inner border-white/20 backdrop-blur-md shadow-slate-400"
+            class="max-w-4xl mx-auto transition-all duration-200 bg-transparent border rounded-lg hover:ease-in-out hover:scale-95 border-white/20 backdrop-blur-md"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
             <a
               href="https://github.com/yansh07"
@@ -696,7 +772,11 @@
           <a
             href="https://www.linkedin.com/in/priyanshu-kumar-singh-34560816b/"
             target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border shadow-inner group border-white/20 rounded-xl backdrop-blur-md shadow-slate-400 hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:scale-95 hover:ease-in-out"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
             <i class="mb-2 text-5xl text-black-500 fab fa-linkedin"></i>
             <h3 class="mb-1 text-lg font-bold text-white">LinkedIn</h3>
@@ -711,7 +791,11 @@
           <a
             href="https://x.com/yansh_08"
             target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border shadow-inner group border-white/20 rounded-xl backdrop-blur-md hover:ease-in-out shadow-slate-400 hover:scale-95 hover:shadow-lg"
+            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:ease-in-out hover:scale-95 hover:shadow-lg"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
             <i class="mb-2 text-5xl text-black-400 fab fa-twitter"></i>
             <h3 class="mb-1 text-lg font-bold text-white">X</h3>
@@ -724,7 +808,11 @@
           <a
             href=" https://github.com/yansh07"
             target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border shadow-inner group border-white/20 hover:ease-in-out rounded-xl backdrop-blur-md shadow-slate-400 hover:scale-95 hover:shadow-lg"
+            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 hover:ease-in-out rounded-xl backdrop-blur-md hover:scale-95 hover:shadow-lg"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
             <i class="mb-2 text-5xl text-black-300 fab fa-github"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Github</h3>
@@ -739,7 +827,11 @@
           <a
             href="https://yansh08.medium.com/"
             target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border shadow-inner group border-white/20 backdrop-blur-md rounded-xl shadow-slate-400 hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 backdrop-blur-md rounded-xl hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
             <i class="mb-2 text-5xl text-white fab fa-medium"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Medium</h3>
@@ -754,7 +846,11 @@
           <a
             href="https://www.instagram.com/yansh.08?igsh=a2xtOGVyZ3EzajBo"
             target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border shadow-inner group border-white/20 rounded-xl backdrop-blur-md shadow-slate-400 hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
             <i class="mb-2 text-5xl text-black-500 fab fa-instagram"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Instagram</h3>
@@ -769,7 +865,11 @@
           <a
             href="https://t.me/waytozero"
             target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border shadow-inner group border-white/20 rounded-xl backdrop-blur-md shadow-slate-400 hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
             <i class="mb-2 text-5xl fab fa-telegram" aria-hidden="true"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Telegram</h3>
@@ -784,7 +884,11 @@
           <a
             href="https://t.me/+2tnhLu0ob5gyNGZl"
             target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border shadow-inner group border-white/20 rounded-xl backdrop-blur-md shadow-slate-400 hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
             <i class="mb-2 text-5xl fa-solid fa-camera" aria-hidden="true"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Captures</h3>
@@ -799,7 +903,11 @@
           <a
             href="https://leetcode.com/u/droplet0/"
             target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border shadow-inner group border-white/20 rounded-xl backdrop-blur-md shadow-slate-400 hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
             <i class="mb-2 text-5xl fas fa-code" aria-hidden="true"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Leetcode</h3>
@@ -815,7 +923,11 @@
           <a
             href="https://youtube.com/playlist?list=PLblFJxIsmfNOXponUc8b03dBguF75-Lot&si=Ltx-xCgNT2HogUCA"
             target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border shadow-inner group border-white/20 rounded-xl backdrop-blur-md shadow-slate-400 hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
             <i
               class="mb-2 text-5xl fa-brands fa-youtube"
@@ -833,7 +945,11 @@
           <a
             href="mailto:pksingh69313@gmail.com"
             target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border shadow-inner group border-white/20 rounded-xl backdrop-blur-md shadow-slate-400 hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            style="
+              box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            "
           >
             <i class="mb-2 text-5xl fa fa-envelope" aria-hidden="true"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Gmail</h3>
@@ -883,27 +999,43 @@
               name="name"
               required
               placeholder="Your Name"
-              class="w-full p-2 pb-2 placeholder-gray-700 bg-transparent border rounded-lg shadow-inner shadow-slate-400 placeholder:text-white font-body border-white/50 backdrop-blur-md focus:outline-none focus:border-white"
+              class="w-full p-2 pb-2 placeholder-gray-700 bg-transparent border rounded-lg placeholder:text-white font-body border-white/50 backdrop-blur-md focus:outline-none focus:border-white"
+              style="
+                box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                  0 0 45px rgba(255, 255, 255, 0.1);
+              "
             />
             <input
               type="email"
               name="email"
               required
               placeholder="Your Email"
-              class="w-full p-2 pb-2 placeholder-gray-700 bg-transparent border rounded-lg shadow-inner placeholder:text-white font-body border-white/50 backdrop-blur-md shadow-slate-400 focus:outline-none focus:border-white"
+              class="w-full p-2 pb-2 placeholder-gray-700 bg-transparent border rounded-lg placeholder:text-white font-body border-white/50 backdrop-blur-md focus:outline-none focus:border-white"
+              style="
+                box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                  0 0 45px rgba(255, 255, 255, 0.1);
+              "
             />
             <textarea
               rows="4"
               name="message"
               required
               placeholder="Your Message"
-              class="w-full p-2 pb-2 placeholder-gray-700 bg-transparent border rounded-lg shadow-inner shadow-slate-400 placeholder:text-white font-body border-white/50 backdrop-blur-md focus:outline-none focus:border-white"
+              class="w-full p-2 pb-2 placeholder-gray-700 bg-transparent border rounded-lg placeholder:text-white font-body border-white/50 backdrop-blur-md focus:outline-none focus:border-white"
+              style="
+                box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                  0 0 45px rgba(255, 255, 255, 0.1);
+              "
             ></textarea>
 
             <!-- Submit Button -->
             <button
               type="submit"
-              class="px-6 py-2 mt-6 text-white transition-all duration-300 bg-transparent border shadow-inner border-white/20 backdrop-blur-md rounded-2xl shadow-slate-400"
+              class="px-6 py-2 mt-6 text-white transition-all duration-300 bg-transparent border border-white/20 backdrop-blur-md rounded-2xl"
+              style="
+                box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                  0 0 45px rgba(255, 255, 255, 0.1);
+              "
             >
               Send Message
             </button>
@@ -995,7 +1127,11 @@
                 My Favorite Playlist
               </h3>
               <div
-                class="w-full p-2 mx-auto bg-transparent border rounded-lg shadow-inner backdrop-blur-md shadow-slate-400 border-white/50 sm:max-w-md"
+                class="w-full p-2 mx-auto bg-transparent border rounded-lg backdrop-blur-md border-white/50 sm:max-w-md"
+                style="
+                  box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
+                    0 0 45px rgba(255, 255, 255, 0.1);
+                "
               >
                 <div
                   class="relative w-full overflow-hidden rounded-md"
@@ -1105,6 +1241,16 @@
       }
 
       updateGreeting();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".tilt-box"), {
+        max: 15,
+        speed: 400,
+        glare: false,
+        "max-glare": 0.2,
+        scale: 1.08,
+      });
     </script>
   </body>
 </html>
