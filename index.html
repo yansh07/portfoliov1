@@ -98,11 +98,27 @@
     <link rel="icon" href="./images/logo.ico" type="image/x-icon" />
     <link href="output.css" rel="stylesheet" />
   </head>
-  <body class="h-full text-white text-spacing bg-slate-950 font-body">
-    <video autoplay loop muted playsinline preload="none" id="video-background">
+  <body class="h-full text-white text-spacing font-body">
+    <!-- <video autoplay loop muted playsinline preload="none" id="video-background">
       <source src="./images/bluebg.webm" type="video/mp4" />
       Your browser does not support the video tag.
-    </video>
+    </video> -->
+    <!-- 🔥 BACKGROUND LAYER -->
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10">
+      <!-- Gradient background -->
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-[#424a48] via-[#000000] to-[#ee7752] opacity-90 animate-gradientMove bg-[length:400%_400%]"
+      ></div>
+
+      <!-- Animated blobs -->
+      <div
+        class="absolute w-[400px] h-[400px] bg-blue-700 rounded-full blur-3xl opacity-40 animate-blob1 top-24 left-10"
+      ></div>
+      <div
+        class="absolute w-[300px] h-[300px] bg-[#ec4949] rounded-full blur-2xl opacity-40 animate-blob2 bottom-20 right-10"
+      ></div>
+    </div>
+
     <div>
       <header
         class="fixed z-50 w-full px-4 transform -translate-x-1/2 top-4 left-1/2 sm:px-6"
@@ -183,14 +199,13 @@
                 </h1>
               </div>
 
-              <p class="mt-4 text-xl font-normal text-white">
-                I build fast, modern websites and automate boring tasks with
-                Python & JavaScript.
+              <p class="mt-4 text-2xl font-bold text-white">
+                Software Developer
               </p>
             </div>
 
             <!-- Social Links -->
-            <div class="flex gap-4 mt-auto">
+            <div class="flex gap-4 py-6 mt-auto">
               <a
                 href="https://github.com/yansh07"
                 class="p-2 transition duration-200 bg-transparent border rounded-lg shadow-inner hover:ease-in-out hover:bg-transparent backdrop-blur-md shadow-slate-400 border-white/20 hover:scale-95"
@@ -793,9 +808,7 @@
           >
             <i class="mb-2 text-5xl text-black-500 fab fa-linkedin"></i>
             <h3 class="mb-1 text-lg font-bold text-white">LinkedIn</h3>
-            <p class="text-sm text-slate-300">
-              Let's connect and create a corporate vibe.
-            </p>
+            <p class="text-sm text-slate-300">Need job.</p>
             <div
               class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
             ></div>
@@ -812,7 +825,7 @@
           >
             <i class="mb-2 text-5xl text-black-400 fab fa-twitter"></i>
             <h3 class="mb-1 text-lg font-bold text-white">X</h3>
-            <p class="text-sm text-slate-300">My thoughts and tech insights.</p>
+            <p class="text-sm text-slate-300">Ideas.</p>
             <div
               class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
             ></div>
@@ -829,9 +842,7 @@
           >
             <i class="mb-2 text-5xl text-black-300 fab fa-github"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Github</h3>
-            <p class="text-sm text-slate-300">
-              Sharing projects and contributions to the open source community.
-            </p>
+            <p class="text-sm text-slate-300">My code's garden.</p>
             <div
               class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
             ></div>
@@ -848,9 +859,7 @@
           >
             <i class="mb-2 text-5xl text-white fab fa-medium"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Medium</h3>
-            <p class="text-sm text-slate-300">
-              Writeups about my insights on tech, philosophy, and life.
-            </p>
+            <p class="text-sm text-slate-300">Yes, I write blogs.</p>
             <div
               class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
             ></div>
@@ -867,9 +876,7 @@
           >
             <i class="mb-2 text-5xl text-black-500 fab fa-instagram"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Instagram</h3>
-            <p class="text-sm text-slate-300">
-              Sharing moments, journeys, and snippets of life.
-            </p>
+            <p class="text-sm text-slate-300">A meme, a laugh.</p>
             <div
               class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
             ></div>
@@ -886,9 +893,7 @@
           >
             <i class="mb-2 text-5xl fab fa-telegram" aria-hidden="true"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Telegram</h3>
-            <p class="text-sm text-slate-300">
-              3AM thoughts, wild emotions and compressed feelings dumping yard.
-            </p>
+            <p class="text-sm text-slate-300">3AM thoughts.</p>
             <div
               class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
             ></div>
@@ -905,9 +910,7 @@
           >
             <i class="mb-2 text-5xl fa-solid fa-camera" aria-hidden="true"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Captures</h3>
-            <p class="text-sm text-slate-300">
-              Just me and my phone having a peaceful moments.
-            </p>
+            <p class="text-sm text-slate-300">Me and my realme.</p>
             <div
               class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
             ></div>
@@ -924,9 +927,7 @@
           >
             <i class="mb-2 text-5xl fab fa-hackerrank" aria-hidden="true"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Hackerrank</h3>
-            <p class="text-sm text-slate-300">
-              Solves problems using Python to improve problem-solving skills.
-            </p>
+            <p class="text-sm text-slate-300">Practice ground.</p>
             <div
               class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
             ></div>
@@ -946,9 +947,7 @@
               aria-hidden="true"
             ></i>
             <h3 class="mb-1 text-lg font-bold text-white">YT Music</h3>
-            <p class="text-sm text-slate-300">
-              Life would be a mistake without music, these are my best friends.
-            </p>
+            <p class="text-sm text-slate-300">My music taste.</p>
             <div
               class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
             ></div>
@@ -965,9 +964,7 @@
           >
             <i class="mb-2 text-5xl fa fa-envelope" aria-hidden="true"></i>
             <h3 class="mb-1 text-lg font-bold text-white">Gmail</h3>
-            <p class="text-sm text-slate-300">
-              Let's build something amazing together.
-            </p>
+            <p class="text-sm text-slate-300">Consider sending a mail.</p>
             <div
               class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
             ></div>
@@ -1139,16 +1136,13 @@
                 My Favorite Playlist
               </h3>
               <div
-                class="w-full p-2 mx-auto bg-transparent border rounded-lg backdrop-blur-md border-white/50 sm:max-w-md"
+                class="w-64 h-40 max-w-sm sm:max-w-xs md:max-w-md lg:max-w-[448px] p-2 bg-transparent border rounded-lg backdrop-blur-md border-white/50 mx-auto"
                 style="
                   box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
                     0 0 45px rgba(255, 255, 255, 0.1);
                 "
               >
-                <div
-                  class="relative w-full overflow-hidden rounded-md"
-                  style="padding-top: 50%"
-                >
+                <div class="relative overflow-hidden rounded-md aspect-[16/9]">
                   <iframe
                     src="https://www.youtube.com/embed/videoseries?si=etPqjHW0-yr6N7FU&amp;list=PLblFJxIsmfNMBYATfNlBm3EDcauHzhZmR"
                     title="YouTube video player"
@@ -1161,32 +1155,13 @@
                     aria-label="YouTube Playlist"
                   ></iframe>
                 </div>
-                <div class="flex items-center justify-between mt-4">
-                  <div class="flex items-center gap-3">
-                    <i class="text-2xl text-blue-500 fas fa-play-circle"></i>
-                    <div>
-                      <p class="text-sm font-semibold text-white">
-                        Bhojpuri hormone - scroll without boredom
-                      </p>
-                      <p class="text-xs text-slate-500">Curated by Priyanshu</p>
-                    </div>
-                  </div>
-                  <a
-                    href="https://www.youtube.com/playlist?list=PLblFJxIsmfNNPNbP5z_eFC-cXolfuwx0R&si=z-2E2grDFVYancOW"
-                    target="_blank"
-                    class="text-white transition-colors hover:text-red-500"
-                    aria-label="Open on YouTube"
-                  >
-                    <i class="text-2xl fab fa-youtube"></i>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
 
           <!-- Footer Bottom -->
           <div
-            class="pt-8 mt-12 mb-8 text-sm text-center border-t text-slate-500 border-white/50"
+            class="pt-8 pb-6 mt-12 text-sm text-center border-t text-slate-500 border-white/50"
           >
             &copy; <span id="current-year"></span> Priyanshu Kumar Singh. All
             rights reserved.
@@ -1262,6 +1237,14 @@
         glare: false,
         "max-glare": 0.2,
         scale: 1.08,
+      });
+    </script>
+    <script>
+      window.addEventListener("scroll", () => {
+        const bg = document.querySelector(".animate-gradientMove");
+        if (bg) {
+          bg.style.backgroundPosition = `center ${window.scrollY * 0.2}px`;
+        }
       });
     </script>
   </body>
