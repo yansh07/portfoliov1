@@ -24,17 +24,6 @@
       body {
         overflow-x: hidden; /* Important: Prevents horizontal scrollbar from marquee */
       }
-      /* Styles for the video background */
-      #video-background {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-        filter: brightness(0.6) opacity(0.8);
-      }
       /* New CSS for glowing text */
       .glowing-text {
         animation: glow 1s infinite alternate; /* Adjust time and behavior */
@@ -99,10 +88,6 @@
     <link href="output.css" rel="stylesheet" />
   </head>
   <body class="h-full text-white text-spacing font-body">
-    <!-- <video autoplay loop muted playsinline preload="none" id="video-background">
-      <source src="./images/bluebg.webm" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video> -->
     <!-- 🔥 BACKGROUND LAYER -->
     <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10">
       <!-- Gradient background -->
