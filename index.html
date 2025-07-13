@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full scroll-smooth">
+<html lang="en" class="min-h-screen scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -87,1041 +87,1052 @@
     <link rel="icon" href="./images/logo.ico" type="image/x-icon" />
     <link href="output.css" rel="stylesheet" />
   </head>
-  <body class="h-full text-white text-spacing font-body">
-    <!-- 🔥 BACKGROUND LAYER -->
-    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10">
-      <!-- Gradient background -->
-      <div
-        class="absolute inset-0 bg-gradient-to-br from-[#424a48] via-[#000000] to-[#ee7752] opacity-90 animate-gradientMove bg-[length:400%_400%]"
-      ></div>
-
-      <!-- Animated blobs -->
-      <div
-        class="absolute w-[400px] h-[400px] bg-blue-700 rounded-full blur-3xl opacity-40 animate-blob1 top-24 left-10"
-      ></div>
-      <div
-        class="absolute w-[300px] h-[300px] bg-[#ec4949] rounded-full blur-2xl opacity-40 animate-blob2 bottom-20 right-10"
-      ></div>
-    </div>
-
-    <div>
-      <header
-        class="fixed z-50 w-full px-4 transform -translate-x-1/2 top-4 left-1/2 sm:px-6"
-      >
-        <nav
-          class="max-w-4xl mx-auto transition-all duration-200 bg-transparent border rounded-full hover:ease-in-out hover:scale-95 border-white/20 backdrop-blur-md"
+  <body class="text-white text-spacing font-body">
+    <div
+      class="min-h-screen bg-gradient-to-tl from-[#0f0f0f] via-[#1c1c1c] to-[#2b2b2b] bg-fixed flex flex-col"
+    >
+      <div>
+        <header
+          class="fixed z-50 w-full px-4 transform -translate-x-1/2 top-4 left-1/2 sm:px-6"
         >
-          <ul
-            class="flex flex-wrap items-center justify-center gap-4 py-4 text-sm font-normal sm:gap-6 md:gap-8 sm:text-base md:text-lg text-slate-200"
+          <nav
+            class="max-w-4xl mx-auto transition-all duration-200 border rounded-full bg-white/5 hover:ease-in-out hover:scale-95 border-white/20 backdrop-blur-lg"
           >
-            <li>
-              <a
-                href="#home"
-                class="transition hover:text-white hover:underline underline-offset-4"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#about"
-                class="transition hover:text-white hover:underline underline-offset-4"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="#projects"
-                class="transition hover:text-white hover:underline underline-offset-4"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a
-                href="#links"
-                class="transition hover:text-white hover:underline underline-offset-4"
-                >Links</a
-              >
-            </li>
-            <li>
-              <a
-                href="#contact"
-                class="transition hover:text-white hover:underline underline-offset-4"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <section id="home" class="pt-[5.5rem] panel">
-        <div
-          class="container grid grid-cols-1 gap-8 px-8 py-4 mx-auto md:grid-cols-2 md:px-20 md:py-12 lg:py-16 md:gap-16 lg:gap-20 xl:gap-24 lg:px-48"
-        >
-          <!-- Left Column - Content -->
-          <div class="flex flex-col gap-2 px-8 md:gap-8">
-            <div class="space-y-4 md:space-y-4">
-              <p
-                class="mb-2 text-xl font-normal text-white"
-                id="greetingText"
-              ></p>
-
-              <div class="sm:p-0 tilt-box">
-                <h1
-                  class="inline-block px-4 py-3 mt-2 text-4xl font-bold leading-tight tracking-wide text-white bg-transparent border rounded-lg backdrop-blur-md border-white/5 md:text-5xl font-heading sm:px-6 sm:py-4 md:px-4 md:py-5"
+            <ul
+              class="flex flex-wrap items-center justify-center gap-4 py-4 text-sm font-normal sm:gap-6 md:gap-8 sm:text-base md:text-lg text-slate-200"
+            >
+              <li>
+                <a
+                  href="#home"
+                  class="transition hover:text-white hover:underline underline-offset-4"
+                  >Home</a
                 >
-                  PRIYANSHU
-                </h1>
-              </div>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="transition hover:text-white hover:underline underline-offset-4"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="transition hover:text-white hover:underline underline-offset-4"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#links"
+                  class="transition hover:text-white hover:underline underline-offset-4"
+                  >Links</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="transition hover:text-white hover:underline underline-offset-4"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
 
-              <p class="mt-4 text-2xl font-bold text-white">
-                Software Developer
-              </p>
-            </div>
-
-            <!-- Social Links -->
-            <div class="flex gap-4 py-6 mt-auto">
-              <a
-                href="https://github.com/yansh07"
-                class="p-2 transition duration-200 bg-transparent border rounded-lg hover:ease-in-out hover:bg-transparent backdrop-blur-md shadow-slate-400 border-white/20 hover:scale-95"
-                aria-label="GitHub"
-              >
-                <i
-                  class="text-3xl text-black-500 hover:text-white fab fa-github sm:text-4xl"
-                ></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/priyanshu-kumar-singh-34560816b/"
-                class="p-2 transition duration-200 bg-transparent border rounded-lg hover:ease-in-out hover:bg-transparent backdrop-blur-md shadow-slate-400 border-white/20 hover:scale-95"
-                aria-label="LinkedIn"
-              >
-                <i
-                  class="text-3xl text-black-500 hover:text-white fab fa-linkedin sm:text-4xl"
-                ></i>
-              </a>
-              <a
-                href="mailto:pksingh69313@gmail.com"
-                class="p-2 transition duration-200 bg-transparent border rounded-lg hover:ease-in-out hover:bg-transparent backdrop-blur-md shadow-slate-400 border-white/20 hover:scale-95"
-                aria-label="Email"
-              >
-                <i
-                  class="text-3xl text-black-500 hover:text-white fa fa-envelope sm:text-4xl"
-                ></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- Right Column - Bio Card -->
+        <section id="home" class="pt-[5.5rem] bg-transparent panel">
           <div
-            class="flex items-center justify-center px-4 sm:px-8"
-            style="perspective: 1000px"
+            class="container grid grid-cols-1 gap-8 px-8 py-4 mx-auto md:grid-cols-2 md:px-20 md:py-12 lg:py-16 md:gap-16 lg:gap-20 xl:gap-24 lg:px-48"
           >
-            <div
-              class="relative w-full max-w-md p-4 text-xl font-normal leading-tight tracking-wider text-white transition-transform duration-500 ease-in-out bg-transparent rounded-lg tilt-box group text-spacing sm:text-xl md:font-normal lg:text-xl xl:text-xl sm:p-2 md:p-6 lg:p-8 border-white/5 backdrop-blur-md md:max-w-none lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl hover:translate-y-3"
-            >
-              <div
-                class="transition-transform duration-500 ease-in-out group-hover:-translate-y-4"
-              >
-                An Undergrad kid burning Entropy tokens to exist, code and
-                understand my meat.<br />
-                Into decorating my chaos with MERN and simplify it with Python.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container max-w-4xl px-6 lg:mx-auto md:px-10 lg:mb-14">
-          <div class="p-4 overflow-hidden bg-transparent">
-            <div
-              class="inline-flex items-center space-x-10 text-sm font-medium animate-marquee md:text-base text-white/90 whitespace-nowrap"
-            >
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-orange-500 fab fa-html5"></i>
-                <span>HTML</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-blue-500 fab fa-css3-alt"></i>
-                <span>CSS</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-yellow-400 fab fa-js-square"></i>
-                <span>JavaScript</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-blue-400 fab fa-python"></i>
-                <span>Python</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-gray-300 fas fa-flask"></i>
-                <span>Flask</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-blue-600 fas fa-code"></i>
-                <span>TypeScript</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-white fab fa-github"></i>
-                <span>GitHub</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl fab fa-react text-cyan-400"></i>
-                <span>React</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-green-500 fab fa-node-js"></i>
-                <span>Node.js</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-green-400 fas fa-database"></i>
-                <span>MongoDB</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-blue-400 fab fa-docker"></i>
-                <span>Docker</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-orange-500 fab fa-html5"></i>
-                <span>HTML</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-blue-500 fab fa-css3-alt"></i>
-                <span>CSS</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-yellow-400 fab fa-js-square"></i>
-                <span>JavaScript</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-blue-400 fab fa-python"></i>
-                <span>Python</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-gray-300 fas fa-flask"></i>
-                <span>Flask</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-blue-600 fas fa-code"></i>
-                <span>TypeScript</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-white fab fa-github"></i>
-                <span>GitHub</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-green-400 fas fa-code-fork"></i>
-                <span>Git</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl fab fa-react text-cyan-400"></i>
-                <span>React</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-green-500 fab fa-node-js"></i>
-                <span>Node.js</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-green-400 fas fa-database"></i>
-                <span>MongoDB</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="text-xl text-blue-400 fab fa-docker"></i>
-                <span>Docker</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <!-- Left Column - Content -->
+            <div class="flex flex-col gap-2 px-8 md:gap-8">
+              <div class="space-y-2">
+                <p
+                  class="mb-2 text-xl font-normal text-white"
+                  id="greetingText"
+                ></p>
 
-      <!-- ✨ Centered Divider Line -->
-      <div
-        class="relative mt-20 h-[2px] w-full lg:mb-12 sm:mb-0 md:mb-6 flex justify-center"
-      >
-        <div class="absolute w-full h-[2px]"></div>
-        <div class="absolute w-80 h-[2px] bg-white rounded-full"></div>
-      </div>
+                <div class="tilt-box">
+                  <h1
+                    class="inline-block text-4xl font-bold leading-tight tracking-wide text-white md:text-5xl font-heading sm:py-4 md:py-5"
+                  >
+                    PRIYANSHU
+                  </h1>
+                </div>
 
-      <section id="about" class="pt-[5.5rem] panel">
-        <div
-          class="flex flex-col-reverse items-center justify-between w-full max-w-4xl px-6 mx-auto xl:-mt-44 md:items-start md:flex-row-reverse md:-mt-8 lg:-mt-44"
-        >
-          <div
-            class="flex-1 w-full max-w-md mt-8 md:space-x-14 md:-mt-2 lg:mt-28"
-          >
-            <h2 class="text-3xl font-bold text-white font-heading md:px-10">
-              My Resume
-            </h2>
-            <div
-              class="mt-6 flex items-center tilt-box justify-center rounded-lg backdrop-blur-md bg-transparent border border-white/20 md:h-[280px] lg:h-[220px]"
-            >
-              <div
-                class="overflow-hidden transition-transform duration-300 hover:scale-105"
-              >
-                <a href="./images/Priyanshu_Kumar_Resume.pdf">
-                  <img
-                    src="./images/avatar.webp"
-                    alt="Priyanshu Kumar"
-                    loading="lazy"
-                    class="w-full max-w-[300px] mx-auto object-contain"
-                  />
+                <p class="mt-4 text-2xl font-bold text-white">
+                  Software Developer
+                </p>
+              </div>
+
+              <!-- Social Links -->
+              <div class="flex gap-4 py-6 mt-auto">
+                <a
+                  href="https://github.com/yansh07"
+                  class="relative z-10 p-2 transition duration-200 bg-transparent border rounded-lg hover:ease-in-out backdrop-blur-md border-white/20 hover:scale-95"
+                  aria-label="GitHub"
+                >
+                  <i
+                    class="text-3xl hover:text-white fab fa-github sm:text-4xl"
+                  ></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/priyanshu-kumar-singh-34560816b/"
+                  class="relative z-10 p-2 transition duration-200 bg-transparent border rounded-lg hover:ease-in-out backdrop-blur-md border-white/20 hover:scale-95"
+                  aria-label="LinkedIn"
+                >
+                  <i
+                    class="text-3xl hover:text-white fab fa-linkedin sm:text-4xl"
+                  ></i>
+                </a>
+                <a
+                  href="mailto:pksingh69313@gmail.com"
+                  class="relative z-10 p-2 transition duration-200 bg-transparent border rounded-lg hover:ease-in-out backdrop-blur-md border-white/20 hover:scale-95"
+                  aria-label="Email"
+                >
+                  <i
+                    class="text-3xl hover:text-white fa fa-envelope sm:text-4xl"
+                  ></i>
                 </a>
               </div>
             </div>
-          </div>
-          <div class="flex-1 w-full">
-            <div class="w-full max-w-md space-y-4 md:mt-0 lg:mt-28">
-              <h2 class="mb-6 text-3xl font-bold text-white font-heading">
-                What I do?
-              </h2>
+
+            <!-- Right Column - Bio Card -->
+            <div
+              class="flex items-center justify-center px-2 sm:px-8"
+              style="perspective: 1000px"
+            >
               <div
-                class="px-6 py-4 bg-transparent border backdrop-blur-md border-white/5 rounded-xl"
+                class="relative w-full max-w-md p-2 text-xl font-normal leading-tight tracking-wider text-white transition-transform duration-500 ease-in-out bg-transparent rounded-lg tilt-box group text-spacing sm:text-xl md:font-normal lg:text-xl xl:text-xl sm:p-2 md:p-6 lg:p-8 border-white/5 backdrop-blur-lg md:max-w-none lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl hover:translate-y-3"
               >
-                <button
-                  class="flex items-center justify-between w-full text-lg text-left font-base text-slate-200"
-                  onclick="toggleAccordion(this)"
-                >
-                  <span>🦾 Automating boring stuffs</span>
-                  <svg
-                    class="w-5 h-5 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </button>
                 <div
-                  class="hidden mt-3 space-y-2 text-sm text-gray-400 accordion-content"
+                  class="transition-transform duration-500 ease-in-out group-hover:-translate-y-4"
                 >
-                  <p>
-                    • I craft bots that wake before I do and execute my rituals
-                  </p>
-                  <p>
-                    • From browser puppets to voice-controlled tasks, I script
-                    peace
-                  </p>
-                  <p>
-                    • If something takes 5 steps, I build a CLI tool that does
-                    it in one
-                  </p>
-                </div>
-              </div>
-              <div
-                class="px-5 py-4 bg-transparent border backdrop-blur-md border-white/5 rounded-xl"
-              >
-                <button
-                  class="flex items-center justify-between w-full text-lg text-left font-base text-slate-200"
-                  onclick="toggleAccordion(this)"
-                >
-                  <span>🌐 Listen to Internet's Whispers</span>
-                  <svg
-                    class="w-5 h-5 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </button>
-                <div
-                  class="hidden mt-3 space-y-2 text-sm text-gray-400 accordion-content"
-                >
-                  <p>
-                    • I analyze network traffic and perform DNS reconnaissance
-                    to understand system architecture
-                  </p>
-                  <p>
-                    • Tools like Nmap, Whois, nslookup are in my poetry toolkit
-                  </p>
-                  <p>
-                    • I build recon scripts not just to hack, but to understand
-                    system deeply
-                  </p>
-                </div>
-              </div>
-              <div
-                class="px-5 py-4 bg-transparent border backdrop-blur-md border-white/5 rounded-xl"
-              >
-                <button
-                  class="flex items-center justify-between w-full text-lg text-left font-base text-slate-200"
-                  onclick="toggleAccordion(this)"
-                >
-                  <span>👨🏻‍💻 Design interfaces that breathe</span>
-                  <svg
-                    class="w-5 h-5 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </button>
-                <div
-                  class="hidden mt-3 space-y-2 text-sm text-gray-400 accordion-content"
-                >
-                  <p>
-                    • I paint in Tailwind and structure stories with semantic
-                    HTML
-                  </p>
-                  <p>• My pages don't just scale-they breathe across devices</p>
-                  <p>
-                    • I don't chase trends-I craft digital spaces that feel like
-                    a window seat on a quite train ride
-                  </p>
+                  An Undergrad kid burning Entropy tokens to exist, code and
+                  understand my meat.<br />
+                  Into decorating my chaos with MERN and simplify it with
+                  Python.
                 </div>
               </div>
             </div>
-            <script>
-              function toggleAccordion(button) {
-                const content = button.nextElementSibling;
-                const icon = button.querySelector("svg");
-                content.classList.toggle("hidden");
-                icon.classList.toggle("rotate-180");
-              }
-            </script>
           </div>
-        </div>
-      </section>
-
-      <!-- ✨ Centered Divider Line -->
-      <div class="relative mt-20 h-[2px] w-full flex justify-center">
-        <div class="absolute w-full h-[2px]"></div>
-        <div class="absolute w-80 h-[2px] bg-white rounded-full"></div>
-      </div>
-
-      <section
-        id="projects"
-        class="container px-6 py-12 mx-auto max-w-4xl pt-[5.5rem] panel"
-      >
-        <div class="w-full space-y-2">
-          <h2 class="mb-6 text-3xl font-bold text-white font-heading">
-            Projects
-          </h2>
-        </div>
-        <p class="mb-8 text-purple-400 glowing-text">
-          Projects that showcase my skills
-        </p>
-        <div
-          class="grid gap-6 transition-all bg-transparent md:grid-cols-2 lg:grid-cols-2 backdrop-blur-md"
-        >
-          <a
-            href="https://github.com/yansh07/spend-Tracker"
-            target="_blank"
-            class="relative block p-6 text-center transition-transform duration-200 ease-in-out border tilt-box group border-white/20 rounded-xl hover:scale-95"
-          >
-            <!-- Card Content Wrapper (to lift on hover) -->
-            <div
-              class="transition-transform duration-500 ease-in-out group-hover:-translate-y-2"
-            >
+          <div class="container max-w-4xl px-10 mt-8 lg:mx-auto md:px-10">
+            <div class="p-4 overflow-hidden">
               <div
-                class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/20"
+                class="inline-flex items-center space-x-10 text-sm font-medium animate-marquee md:text-base text-white/90 whitespace-nowrap"
               >
-                <img
-                  src="./images/spends.webp"
-                  alt="Port scanner Thumbnail"
-                  class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-
-              <h3 class="mb-2 text-xl font-bold text-white">Spends Tracker</h3>
-              <p class="mb-4 text-base text-slate-300">
-                A web app built with Python and Streamlit, where you can track
-                your monthly spends, and also it automatically sends monthly
-                report direct into your inbox.
-              </p>
-
-              <div class="flex flex-wrap justify-center gap-2">
-                <span
-                  class="px-3 py-1 text-xs text-blue-400 rounded-full bg-blue-900/30"
-                  >Streamlit</span
-                >
-                <span
-                  class="px-3 py-1 text-xs text-purple-400 rounded-full bg-purple-900/30"
-                  >Python</span
-                >
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-orange-500 fab fa-html5"></i>
+                  <span>HTML</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-blue-500 fab fa-css3-alt"></i>
+                  <span>CSS</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-yellow-400 fab fa-js-square"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-blue-400 fab fa-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-gray-300 fas fa-flask"></i>
+                  <span>Flask</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-blue-600 fas fa-code"></i>
+                  <span>TypeScript</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-white fab fa-github"></i>
+                  <span>GitHub</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl fab fa-react text-cyan-400"></i>
+                  <span>React</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-green-500 fab fa-node-js"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-green-400 fas fa-database"></i>
+                  <span>MongoDB</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-blue-400 fab fa-docker"></i>
+                  <span>Docker</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-orange-500 fab fa-html5"></i>
+                  <span>HTML</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-blue-500 fab fa-css3-alt"></i>
+                  <span>CSS</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-yellow-400 fab fa-js-square"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-blue-400 fab fa-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-gray-300 fas fa-flask"></i>
+                  <span>Flask</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-blue-600 fas fa-code"></i>
+                  <span>TypeScript</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-white fab fa-github"></i>
+                  <span>GitHub</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl fa-solid fa-code-branch"></i>
+                  <span>Git</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl fab fa-react text-cyan-400"></i>
+                  <span>React</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-green-500 fab fa-node-js"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-green-400 fas fa-database"></i>
+                  <span>MongoDB</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl text-blue-400 fab fa-docker"></i>
+                  <span>Docker</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="text-xl fa-solid fa-database"></i>
+                  <span>SQL</span>
+                </div>
               </div>
             </div>
-
-            <!-- Optional subtle overlay (can remove if not needed) -->
-            <div
-              class="absolute inset-0 pointer-events-none bg-white/5 rounded-xl"
-            ></div>
-          </a>
-
-          <a
-            href="https://github.com/yansh07/AiAssistant"
-            target="_blank"
-            class="relative block p-6 text-center transition-transform duration-200 ease-in-out border tilt-box group border-white/20 rounded-xl hover:scale-95"
-          >
-            <!-- Content wrapper to make text lift on hover -->
-            <div
-              class="transition-transform duration-500 ease-in-out group-hover:-translate-y-2"
-            >
-              <div
-                class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/50"
-              >
-                <img
-                  src="./images/ai.webp"
-                  alt="AI Thumbnail"
-                  class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-
-              <h3 class="mb-2 text-xl font-bold text-white">AI Assistant</h3>
-              <p class="mb-4 text-base text-slate-300">
-                Built a voice controlled AI Assistant, with wake word feature.
-                It saves your time by up to 60% by automating your Google search
-                and other small commands.
-              </p>
-
-              <div class="flex flex-wrap justify-center gap-2">
-                <span
-                  class="px-3 py-1 text-xs text-green-400 rounded-full bg-green-900/30"
-                  >Python</span
-                >
-                <span
-                  class="px-3 py-1 text-xs text-red-400 rounded-full bg-red-900/30"
-                  >OpenAI</span
-                >
-              </div>
-            </div>
-
-            <!-- Subtle overlay (optional visual glow) -->
-            <div
-              class="absolute inset-0 pointer-events-none bg-white/5 rounded-xl"
-            ></div>
-          </a>
-
-          <!-- 🔎 Project Recon -->
-          <a
-            href="https://github.com/yansh07/basic-subdomain-enumerator"
-            target="_blank"
-            class="relative block p-6 text-center transition-transform duration-200 ease-in-out border tilt-box group border-white/20 rounded-xl hover:scale-95"
-          >
-            <div
-              class="transition-transform duration-500 ease-in-out group-hover:-translate-y-2"
-            >
-              <div
-                class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/50"
-              >
-                <img
-                  src="./images/subdomain.webp"
-                  alt="Project Recon Thumbnail"
-                  class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-              <h3 class="mb-2 text-xl font-bold text-white">
-                Subdomain Enumerator
-              </h3>
-              <p class="mb-4 text-base text-slate-300">
-                Built a Subdomain Enumeration Tool that discovers hidden
-                subdomains and IP Addresses respectively. It uses Python's
-                multithreading to reduce the scan time significantly.
-              </p>
-              <div class="flex flex-wrap justify-center gap-2">
-                <span
-                  class="px-3 py-1 text-xs text-blue-400 rounded-full bg-blue-900/30"
-                  >Cybersecurity</span
-                >
-                <span
-                  class="px-3 py-1 text-xs text-purple-400 rounded-full bg-purple-900/30"
-                  >Recon</span
-                >
-              </div>
-            </div>
-            <div
-              class="absolute inset-0 pointer-events-none bg-white/5 rounded-xl"
-            ></div>
-          </a>
-
-          <!-- 🤖 Telegram Bot -->
-          <a
-            href="https://github.com/yansh07/web-scraper-bot"
-            target="_blank"
-            class="relative block p-6 text-center transition-transform duration-200 ease-in-out border tilt-box group border-white/20 rounded-xl hover:scale-95"
-          >
-            <div
-              class="transition-transform duration-500 ease-in-out group-hover:-translate-y-2"
-            >
-              <div
-                class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/50"
-              >
-                <img
-                  src="./images/bot.webp"
-                  alt="Telegram Bot Thumbnail"
-                  class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-              <h3 class="mb-2 text-xl font-bold text-white">Telegram bot</h3>
-              <p class="mb-4 text-base text-slate-300">
-                A web scraper telegram bot that uses Playwright to scrap weather
-                data using API, and gives output to user through a Telegram bot.
-              </p>
-              <div class="flex flex-wrap justify-center gap-2">
-                <span
-                  class="px-3 py-1 text-xs text-green-400 rounded-full bg-green-900/30"
-                  >Playwright</span
-                >
-                <span
-                  class="px-3 py-1 text-xs text-red-400 rounded-full bg-red-900/30"
-                  >Python</span
-                >
-              </div>
-            </div>
-            <div
-              class="absolute inset-0 pointer-events-none bg-white/5 rounded-xl"
-            ></div>
-          </a>
-        </div>
-
-        <div class="w-full mt-12">
-          <div
-            class="max-w-4xl mx-auto transition-all duration-200 bg-transparent border rounded-full hover:ease-in-out hover:scale-95 border-white/20 backdrop-blur-md"
-          >
-            <a
-              href="https://github.com/yansh07"
-              target="_blank"
-              class="flex items-center justify-center px-6 py-4"
-            >
-              <span class="mr-3 text-lg font-medium text-white"
-                >Load More Projects</span
-              >
-              <i class="mb-2 text-3xl text-black-300 fab fa-github"></i>
-            </a>
           </div>
-        </div>
-      </section>
-
-      <!-- ✨ Centered Divider Line -->
-      <div class="relative mt-10 h-[2px] w-full flex justify-center">
-        <div class="absolute w-full h-[2px]"></div>
-        <div class="absolute w-80 h-[2px] bg-white rounded-full"></div>
-      </div>
-
-      <!-- cards -->
-      <section
-        id="links"
-        class="container px-6 mx-auto max-w-4xl pt-[5.5rem] panel"
-      >
-        <div class="w-full">
-          <h2 class="mb-6 text-3xl font-bold text-white font-heading">Links</h2>
-        </div>
-        <p class="mb-8 text-purple-400 glowing-text">
-          Connect with me across different platforms and see my other work.
-        </p>
-
-        <div
-          class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
-        >
-          <a
-            href="https://www.linkedin.com/in/priyanshu-kumar-singh-34560816b/"
-            target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:scale-95 hover:ease-in-out"
-          >
-            <i class="mb-2 text-5xl text-black-500 fab fa-linkedin"></i>
-            <h3 class="mb-1 text-lg font-bold text-white">LinkedIn</h3>
-            <p class="text-sm text-slate-300">Need job.</p>
-            <div
-              class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
-            ></div>
-          </a>
-
-          <a
-            href="https://x.com/yansh_08"
-            target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:ease-in-out hover:scale-95 hover:shadow-lg"
-          >
-            <i class="mb-2 text-5xl text-black-400 fab fa-twitter"></i>
-            <h3 class="mb-1 text-lg font-bold text-white">X</h3>
-            <p class="text-sm text-slate-300">Ideas.</p>
-            <div
-              class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
-            ></div>
-          </a>
-
-          <a
-            href=" https://github.com/yansh07"
-            target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 hover:ease-in-out rounded-xl backdrop-blur-md hover:scale-95 hover:shadow-lg"
-          >
-            <i class="mb-2 text-5xl text-black-300 fab fa-github"></i>
-            <h3 class="mb-1 text-lg font-bold text-white">Github</h3>
-            <p class="text-sm text-slate-300">My code's garden.</p>
-            <div
-              class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
-            ></div>
-          </a>
-
-          <a
-            href="https://yansh08.medium.com/"
-            target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 backdrop-blur-md rounded-xl hover:scale-95 hover:ease-in-out hover:shadow-lg"
-          >
-            <i class="mb-2 text-5xl text-white fab fa-medium"></i>
-            <h3 class="mb-1 text-lg font-bold text-white">Medium</h3>
-            <p class="text-sm text-slate-300">Yes, I write blogs.</p>
-            <div
-              class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
-            ></div>
-          </a>
-
-          <a
-            href="https://www.instagram.com/yansh.08?igsh=a2xtOGVyZ3EzajBo"
-            target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:scale-95 hover:ease-in-out hover:shadow-lg"
-          >
-            <i class="mb-2 text-5xl text-black-500 fab fa-instagram"></i>
-            <h3 class="mb-1 text-lg font-bold text-white">Instagram</h3>
-            <p class="text-sm text-slate-300">A meme, a laugh.</p>
-            <div
-              class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
-            ></div>
-          </a>
-
-          <a
-            href="https://t.me/waytozero"
-            target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:scale-95 hover:ease-in-out hover:shadow-lg"
-          >
-            <i class="mb-2 text-5xl fab fa-telegram" aria-hidden="true"></i>
-            <h3 class="mb-1 text-lg font-bold text-white">Telegram</h3>
-            <p class="text-sm text-slate-300">3AM thoughts.</p>
-            <div
-              class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
-            ></div>
-          </a>
-
-          <a
-            href="https://t.me/+2tnhLu0ob5gyNGZl"
-            target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:scale-95 hover:ease-in-out hover:shadow-lg"
-          >
-            <i class="mb-2 text-5xl fa-solid fa-camera" aria-hidden="true"></i>
-            <h3 class="mb-1 text-lg font-bold text-white">Captures</h3>
-            <p class="text-sm text-slate-300">Me and my realme.</p>
-            <div
-              class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
-            ></div>
-          </a>
-
-          <a
-            href="https://www.hackerrank.com/profile/pksingh69313"
-            target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:scale-95 hover:ease-in-out hover:shadow-lg"
-          >
-            <i class="mb-2 text-5xl fab fa-hackerrank" aria-hidden="true"></i>
-            <h3 class="mb-1 text-lg font-bold text-white">Hackerrank</h3>
-            <p class="text-sm text-slate-300">Practice ground.</p>
-            <div
-              class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
-            ></div>
-          </a>
-
-          <a
-            href="https://youtube.com/playlist?list=PLblFJxIsmfNOXponUc8b03dBguF75-Lot&si=Ltx-xCgNT2HogUCA"
-            target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:scale-95 hover:ease-in-out hover:shadow-lg"
-          >
-            <i
-              class="mb-2 text-5xl fa-brands fa-youtube"
-              aria-hidden="true"
-            ></i>
-            <h3 class="mb-1 text-lg font-bold text-white">YT Music</h3>
-            <p class="text-sm text-slate-300">My music taste.</p>
-            <div
-              class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
-            ></div>
-          </a>
-
-          <a
-            href="mailto:pksingh69313@gmail.com"
-            target="_blank"
-            class="relative flex flex-col items-center p-4 text-center transition duration-200 bg-transparent border group border-white/20 rounded-xl backdrop-blur-md hover:scale-95 hover:ease-in-out hover:shadow-lg"
-          >
-            <i class="mb-2 text-5xl fa fa-envelope" aria-hidden="true"></i>
-            <h3 class="mb-1 text-lg font-bold text-white">Gmail</h3>
-            <p class="text-sm text-slate-300">Consider sending a mail.</p>
-            <div
-              class="absolute inset-0 transition-all duration-300 bg-black bg-opacity-0 group-hover:ease-in-out rounded-xl"
-            ></div>
-          </a>
-        </div>
-      </section>
-      <!-- ✨ Centered Divider Line -->
-      <div class="relative mt-20 h-[2px] w-full flex justify-center">
-        <div class="absolute w-full h-[2px]"></div>
-        <div class="absolute w-80 h-[2px] bg-white rounded-full"></div>
-      </div>
-
-      <section
-        id="contact"
-        class="w-full px-4 py-16 text-white sm:px-8 md:px-12 pt-[5.5rem] panel"
-      >
-        <div
-          class="flex flex-col items-start justify-between max-w-4xl gap-12 mx-auto md:flex-row"
-        >
-          <!-- Left Text Side -->
-          <div class="px-8 md:w-1/2">
-            <h2
-              class="text-3xl font-bold leading-relaxed font-heading sm:text-4xl"
-            >
-              Have any suggestions or project idea?
-            </h2>
-            <p class="mt-4 text-lg text-purple-400 glowing-text">
-              Let's grow together. Feel free to reach.
-            </p>
-          </div>
-
-          <!-- Right Form Side -->
-          <form
-            action="https://formspree.io/f/myzjzokb"
-            method="POST"
-            id="contactForm"
-            class="w-full px-8 space-y-6 md:w-1/2"
-          >
-            <input
-              type="text"
-              name="name"
-              required
-              placeholder="Your Name"
-              class="w-full p-2 pb-2 placeholder-gray-700 bg-transparent border rounded-lg placeholder:text-white font-body border-white/50 backdrop-blur-md focus:outline-none focus:border-white"
-            />
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="Your Email"
-              class="w-full p-2 pb-2 placeholder-gray-700 bg-transparent border rounded-lg placeholder:text-white font-body border-white/50 backdrop-blur-md focus:outline-none focus:border-white"
-            />
-            <textarea
-              rows="4"
-              name="message"
-              required
-              placeholder="Your Message"
-              class="w-full p-2 pb-2 placeholder-gray-700 bg-transparent border rounded-lg placeholder:text-white font-body border-white/50 backdrop-blur-md focus:outline-none focus:border-white"
-            ></textarea>
-
-            <!-- Submit Button -->
-            <button
-              type="submit"
-              class="px-6 py-2 mt-6 text-white transition-all duration-300 bg-transparent border border-white/20 backdrop-blur-md rounded-2xl"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
+        </section>
 
         <!-- ✨ Centered Divider Line -->
-        <div class="relative mt-20 h-[2px] w-full flex justify-center">
-          <div class="absolute max-w-4xl h-[2px]"></div>
+        <div
+          class="relative mt-20 h-[2px] w-full lg:mb-12 sm:mb-0 md:mb-6 flex justify-center"
+        >
+          <div class="absolute w-full h-[2px]"></div>
           <div class="absolute w-80 h-[2px] bg-white rounded-full"></div>
         </div>
 
-        <!-- ✅ Toast Message -->
-        <div
-          id="toast"
-          class="fixed px-6 py-3 text-black transition-opacity duration-500 transform -translate-x-1/2 bg-white rounded-full shadow-lg opacity-0 pointer-events-none bottom-8 left-1/2"
-        >
-          Thank you! Your message has been sent.
-        </div>
-      </section>
-      <footer class="max-w-4xl px-4 mx-auto text-slate-400 sm:px-6 lg:px-24">
-        <div class="container mx-auto">
-          <div class="grid grid-cols-1 gap-6 p-4 md:grid-cols-2 lg:grid-cols-3">
-            <!-- Connect Section -->
+        <section id="about" class="pt-[5.5rem] bg-transparent panel">
+          <div
+            class="flex flex-col-reverse items-center justify-between w-full max-w-4xl px-6 mx-auto xl:-mt-44 md:items-start md:flex-row-reverse md:-mt-8 lg:-mt-44"
+          >
             <div
-              class="flex flex-col items-center text-center md:items-start md:text-left"
+              class="flex-1 w-full max-w-md mt-8 md:space-x-14 md:-mt-2 lg:mt-28"
             >
-              <h3 class="mb-4 text-xl font-bold text-white font-heading">
-                Connect with Me
-              </h3>
-              <div class="flex gap-4 mb-6 sm:mb-8">
-                <!-- GitHub -->
-                <a
-                  href="https://github.com/yansh07"
-                  class="p-2 transition duration-200 bg-transparent border rounded-lg backdrop-blur-md shadow-slate-400 border-white/50 hover:ease-in-out hover:scale-95 hover:bg-transparent"
-                  aria-label="GitHub"
-                >
-                  <i class="text-3xl text-white fab fa-github"></i>
-                </a>
-                <!-- LinkedIn -->
-                <a
-                  href="https://www.linkedin.com/in/priyanshu-kumar-singh-34560816b/"
-                  class="p-2 transition duration-200 bg-transparent border rounded-lg backdrop-blur-md shadow-slate-400 border-white/50 hover:ease-in-out hover:scale-95 hover:bg-transparent"
-                  aria-label="LinkedIn"
-                >
-                  <i class="text-3xl text-white fab fa-linkedin"></i>
-                </a>
-                <!-- Email -->
-                <a
-                  href="mailto:pksingh69313@gmail.com"
-                  class="p-2 transition duration-200 bg-transparent border rounded-lg backdrop-blur-md shadow-slate-400 border-white/50 hover:ease-in-out hover:scale-95 hover:bg-transparent"
-                  aria-label="Email"
-                >
-                  <i class="text-3xl text-white fa fa-envelope"></i>
-                </a>
-              </div>
-
-              <!-- Stack Info -->
-              <div class="space-y-2 text-sm">
-                <p
-                  class="flex items-center justify-center gap-2 md:justify-start hover:text-white hover:ease-in-out"
-                >
-                  Built with <i class="text-blue-400 fas fa-hammer"></i> Custom
-                  HTML
-                </p>
-                <p
-                  class="flex items-center justify-center gap-2 md:justify-start hover:text-white hover:ease-in-out"
-                >
-                  Styled with
-                  <i class="text-blue-500 fab fa-css3-alt"></i> Tailwind CSS
-                </p>
-                <p
-                  class="flex items-center justify-center gap-2 md:justify-start hover:text-white hover:ease-in-out"
-                >
-                  Deployed on <i class="text-green-400 fas fa-globe"></i> GitHub
-                  Pages
-                </p>
-              </div>
-            </div>
-
-            <!-- Playlist Section -->
-            <div
-              class="flex flex-col gap-4 text-center lg:px-12 lg:space-x-20 md:col-span-1 lg:col-span-2 md:text-left"
-            >
-              <!-- Add gap on small screens -->
-              <div class="h-2 sm:h-2 sm:-mt-8"></div>
-
-              <h3 class="mb-2 text-xl font-bold text-white font-heading">
-                My Favorite Playlist
-              </h3>
+              <h2 class="text-3xl font-bold text-white font-heading md:px-10">
+                My Resume
+              </h2>
               <div
-                class="w-64 h-40 max-w-sm sm:max-w-xs md:max-w-md lg:max-w-[448px] p-2 bg-transparent border rounded-lg backdrop-blur-md border-white/50 mx-auto"
-                style="
-                  box-shadow: 0 0 10px #ffffff, 0 0 30px rgba(105, 71, 209, 0.2),
-                    0 0 45px rgba(255, 255, 255, 0.1);
-                "
+                class="mt-6 flex items-center tilt-box justify-center rounded-lg backdrop-blur-lg bg-white/5 border border-white/5 md:h-[280px] lg:h-[220px]"
               >
-                <div class="relative overflow-hidden rounded-md aspect-[16/9]">
-                  <iframe
-                    src="https://www.youtube.com/embed/videoseries?si=etPqjHW0-yr6N7FU&amp;list=PLblFJxIsmfNMBYATfNlBm3EDcauHzhZmR"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                    class="absolute top-0 left-0 w-full h-full rounded-md"
-                    loading="lazy"
-                    aria-label="YouTube Playlist"
-                  ></iframe>
+                <div
+                  class="overflow-hidden transition-transform duration-300 hover:scale-105"
+                >
+                  <a href="./images/Priyanshu_Kumar_Resume.pdf">
+                    <img
+                      src="./images/avatar.webp"
+                      alt="Priyanshu Kumar"
+                      loading="lazy"
+                      class="w-full max-w-[300px] mx-auto object-contain"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
+            <div class="flex-1 w-full">
+              <div class="w-full max-w-md space-y-4 md:mt-0 lg:mt-28">
+                <h2 class="mb-6 text-3xl font-bold text-white font-heading">
+                  What I do?
+                </h2>
+                <div
+                  class="px-6 py-4 border bg-white/5 backdrop-blur-lg border-white/5 rounded-xl"
+                >
+                  <button
+                    class="flex items-center justify-between w-full text-lg text-left font-base text-slate-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span>🦾 Automating boring stuffs</span>
+                    <svg
+                      class="w-5 h-5 transition-transform duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    class="hidden mt-3 space-y-2 text-sm text-gray-400 accordion-content"
+                  >
+                    <p>
+                      • I craft bots that wake before I do and execute my
+                      rituals
+                    </p>
+                    <p>
+                      • From browser puppets to voice-controlled tasks, I script
+                      peace
+                    </p>
+                    <p>
+                      • If something takes 5 steps, I build a CLI tool that does
+                      it in one
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-5 py-4 border bg-white/5 backdrop-blur-lg border-white/5 rounded-xl"
+                >
+                  <button
+                    class="flex items-center justify-between w-full text-lg text-left font-base text-slate-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span>🌐 Listen to Internet's Whispers</span>
+                    <svg
+                      class="w-5 h-5 transition-transform duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    class="hidden mt-3 space-y-2 text-sm text-gray-400 accordion-content"
+                  >
+                    <p>
+                      • I analyze network traffic and perform DNS reconnaissance
+                      to understand system architecture
+                    </p>
+                    <p>
+                      • Tools like Nmap, Whois, nslookup are in my poetry
+                      toolkit
+                    </p>
+                    <p>
+                      • I build recon scripts not just to hack, but to
+                      understand system deeply
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-5 py-4 border bg-white/5 backdrop-blur-lg border-white/5 rounded-xl"
+                >
+                  <button
+                    class="flex items-center justify-between w-full text-lg text-left font-base text-slate-200"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span>👨🏻‍💻 Design interfaces that breathe</span>
+                    <svg
+                      class="w-5 h-5 transition-transform duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    class="hidden mt-3 space-y-2 text-sm text-gray-400 accordion-content"
+                  >
+                    <p>
+                      • I paint in Tailwind and structure stories with semantic
+                      HTML
+                    </p>
+                    <p>
+                      • My pages don't just scale-they breathe across devices
+                    </p>
+                    <p>
+                      • I don't chase trends-I craft digital spaces that feel
+                      like a window seat on a quite train ride
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <script>
+                function toggleAccordion(button) {
+                  const content = button.nextElementSibling;
+                  const icon = button.querySelector("svg");
+                  content.classList.toggle("hidden");
+                  icon.classList.toggle("rotate-180");
+                }
+              </script>
+            </div>
           </div>
+        </section>
 
-          <!-- Footer Bottom -->
-          <div
-            class="pt-8 pb-6 mt-12 text-sm text-center border-t text-slate-500 border-white/50"
-          >
-            &copy; <span id="current-year"></span> Priyanshu Kumar Singh. All
-            rights reserved.
-          </div>
+        <!-- ✨ Centered Divider Line -->
+        <div class="relative mt-20 h-[2px] w-full flex justify-center">
+          <div class="absolute w-full h-[2px]"></div>
+          <div class="absolute w-80 h-[2px] bg-white rounded-full"></div>
         </div>
-      </footer>
 
+        <section
+          id="projects"
+          class="container bg-transparent px-6 py-12 mx-auto max-w-4xl pt-[5.5rem] panel"
+        >
+          <div class="w-full space-y-2">
+            <h2 class="mb-6 text-3xl font-bold text-white font-heading">
+              Projects
+            </h2>
+          </div>
+          <p class="mb-8 text-purple-400 glowing-text">
+            Projects that showcase my skills
+          </p>
+          <div
+            class="grid gap-6 transition-all bg-transparent md:grid-cols-2 lg:grid-cols-2 backdrop-blur-lg"
+          >
+            <a
+              href="https://github.com/yansh07/spend-Tracker"
+              target="_blank"
+              class="relative block p-6 text-center transition-transform duration-200 ease-in-out border tilt-box group border-white/20 rounded-xl hover:scale-95"
+            >
+              <!-- Card Content Wrapper (to lift on hover) -->
+              <div
+                class="transition-transform duration-500 ease-in-out group-hover:-translate-y-2"
+              >
+                <div
+                  class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/20"
+                >
+                  <img
+                    src="./images/spends.webp"
+                    alt="Port scanner Thumbnail"
+                    class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+
+                <h3 class="mb-2 text-xl font-bold text-white">
+                  Spends Tracker
+                </h3>
+                <p class="mb-4 text-base text-slate-300">
+                  Created a minimalist spending tracker app integrated with
+                  Google Sheets. Implemented Gmail automation for monthly
+                  spending reports. Developed a secure and mobile-friendly user
+                  interface.
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-2">
+                  <span
+                    class="px-3 py-1 text-xs text-blue-400 rounded-full bg-blue-900/30"
+                    >Streamlit</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs text-purple-400 rounded-full bg-purple-900/30"
+                    >Python</span
+                  >
+                </div>
+              </div>
+
+              <!-- Optional subtle overlay (can remove if not needed) -->
+              <div
+                class="absolute inset-0 pointer-events-none bg-white/5 rounded-xl"
+              ></div>
+            </a>
+
+            <a
+              href="https://github.com/yansh07/AiAssistant"
+              target="_blank"
+              class="relative block p-6 text-center transition-transform duration-200 ease-in-out border tilt-box group border-white/20 rounded-xl hover:scale-95"
+            >
+              <!-- Content wrapper to make text lift on hover -->
+              <div
+                class="transition-transform duration-500 ease-in-out group-hover:-translate-y-2"
+              >
+                <div
+                  class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/20"
+                >
+                  <img
+                    src="./images/ai.webp"
+                    alt="AI Thumbnail"
+                    class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+
+                <h3 class="mb-2 text-xl font-bold text-white">AI Assistant</h3>
+                <p class="mb-4 text-base text-slate-300">
+                  Developed a voice-activated AI assistant using GPT for command
+                  processing. Automated task execution with Playwright. Designed
+                  a user-friendly and eﬀicient interface.
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-2">
+                  <span
+                    class="px-3 py-1 text-xs text-green-400 rounded-full bg-green-900/30"
+                    >Python</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs text-red-400 rounded-full bg-red-900/30"
+                    >OpenAI</span
+                  >
+                </div>
+              </div>
+
+              <!-- Subtle overlay (optional visual glow) -->
+              <div
+                class="absolute inset-0 pointer-events-none bg-white/5 rounded-xl"
+              ></div>
+            </a>
+
+            <!-- 🔎 Project Recon -->
+            <a
+              href="https://github.com/yansh07/basic-subdomain-enumerator"
+              target="_blank"
+              class="relative block p-6 text-center transition-transform duration-200 ease-in-out border tilt-box group border-white/20 rounded-xl hover:scale-95"
+            >
+              <div
+                class="transition-transform duration-500 ease-in-out group-hover:-translate-y-2"
+              >
+                <div
+                  class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/20"
+                >
+                  <img
+                    src="./images/subdomain.webp"
+                    alt="Project Recon Thumbnail"
+                    class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="mb-2 text-xl font-bold text-white">
+                  Subdomain Enumerator
+                </h3>
+                <p class="mb-4 text-base text-slate-300">
+                  Built a Subdomain Enumeration Tool that discovers hidden
+                  subdomains and IP Addresses respectively. It uses Python's
+                  multithreading to reduce the scan time significantly.
+                </p>
+                <div class="flex flex-wrap justify-center gap-2">
+                  <span
+                    class="px-3 py-1 text-xs text-blue-400 rounded-full bg-blue-900/30"
+                    >Cybersecurity</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs text-purple-400 rounded-full bg-purple-900/30"
+                    >Recon</span
+                  >
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 pointer-events-none bg-white/5 rounded-xl"
+              ></div>
+            </a>
+
+            <!-- 🤖 Telegram Bot -->
+            <a
+              href="https://github.com/yansh07/web-scraper-bot"
+              target="_blank"
+              class="relative block p-6 text-center transition-transform duration-200 ease-in-out border tilt-box group border-white/20 rounded-xl hover:scale-95"
+            >
+              <div
+                class="transition-transform duration-500 ease-in-out group-hover:-translate-y-2"
+              >
+                <div
+                  class="relative w-full h-48 p-4 mb-4 overflow-hidden border rounded-md border-white/20"
+                >
+                  <img
+                    src="./images/bot.webp"
+                    alt="Telegram Bot Thumbnail"
+                    class="object-cover w-full h-full max-w-[600px] mx-auto rounded-md transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="mb-2 text-xl font-bold text-white">Telegram bot</h3>
+                <p class="mb-4 text-base text-slate-300">
+                  A web scraper telegram bot that uses Playwright to scrap
+                  weather data using API, and gives output to user through a
+                  Telegram bot.
+                </p>
+                <div class="flex flex-wrap justify-center gap-2">
+                  <span
+                    class="px-3 py-1 text-xs text-green-400 rounded-full bg-green-900/30"
+                    >Playwright</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs text-red-400 rounded-full bg-red-900/30"
+                    >Python</span
+                  >
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 pointer-events-none bg-white/5 rounded-xl"
+              ></div>
+            </a>
+          </div>
+
+          <div class="w-full mt-12">
+            <div
+              class="max-w-4xl mx-auto transition-all duration-200 border rounded-full bg-white/5 hover:ease-in-out hover:scale-95 border-white/20 backdrop-blur-lg"
+            >
+              <a
+                href="https://github.com/yansh07"
+                target="_blank"
+                class="flex items-center justify-center px-6 py-2"
+              >
+                <span class="mr-3 text-lg font-medium text-white"
+                  >Load More Projects</span
+                >
+                <i class="mb-2 text-3xl text-black-300 fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ✨ Centered Divider Line -->
+        <div class="relative mt-10 h-[2px] w-full flex justify-center">
+          <div class="absolute w-full h-[2px]"></div>
+          <div class="absolute w-80 h-[2px] bg-white rounded-full"></div>
+        </div>
+
+        <!-- cards -->
+        <section
+          id="links"
+          class="container px-6 bg-transparent mx-auto max-w-4xl pt-[5.5rem] panel"
+        >
+          <div class="w-full">
+            <h2 class="mb-6 text-3xl font-bold text-white font-heading">
+              Links
+            </h2>
+          </div>
+          <p class="mb-8 text-purple-400 glowing-text">
+            Connect with me across different platforms and see my other work.
+          </p>
+
+          <div
+            class="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
+          >
+            <a
+              href="https://www.linkedin.com/in/priyanshu-kumar-singh-34560816b/"
+              target="_blank"
+              class="relative flex flex-col items-center p-4 text-center transition duration-200 border bg-white/5 group border-white/20 rounded-xl backdrop-blur-lg hover:scale-95 hover:ease-in-out"
+            >
+              <i class="mb-2 text-5xl text-black-500 fab fa-linkedin"></i>
+              <h3 class="mb-1 text-lg font-bold text-white">LinkedIn</h3>
+              <p class="text-sm text-slate-300">Need job.</p>
+              <div
+                class="absolute inset-0 transition-all duration-300 bg-opacity-0 group-hover:ease-in-out rounded-xl"
+              ></div>
+            </a>
+
+            <a
+              href="https://x.com/yansh_08"
+              target="_blank"
+              class="relative flex flex-col items-center p-4 text-center transition duration-200 border bg-white/5 group border-white/20 rounded-xl backdrop-blur-lg hover:ease-in-out hover:scale-95 hover:shadow-lg"
+            >
+              <i class="mb-2 text-5xl text-black-400 fab fa-twitter"></i>
+              <h3 class="mb-1 text-lg font-bold text-white">X</h3>
+              <p class="text-sm text-slate-300">Ideas.</p>
+              <div
+                class="absolute inset-0 transition-all duration-300 bg-opacity-0 group-hover:ease-in-out rounded-xl"
+              ></div>
+            </a>
+
+            <a
+              href=" https://github.com/yansh07"
+              target="_blank"
+              class="relative flex flex-col items-center p-4 text-center transition duration-200 border bg-white/5 group border-white/20 hover:ease-in-out rounded-xl backdrop-blur-lg hover:scale-95 hover:shadow-lg"
+            >
+              <i class="mb-2 text-5xl text-black-300 fab fa-github"></i>
+              <h3 class="mb-1 text-lg font-bold text-white">Github</h3>
+              <p class="text-sm text-slate-300">My code's garden.</p>
+              <div
+                class="absolute inset-0 transition-all duration-300 bg-opacity-0 group-hover:ease-in-out rounded-xl"
+              ></div>
+            </a>
+
+            <a
+              href="https://yansh08.medium.com/"
+              target="_blank"
+              class="relative flex flex-col items-center p-4 text-center transition duration-200 border bg-white/5 group border-white/20 backdrop-blur-lg rounded-xl hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            >
+              <i class="mb-2 text-5xl text-white fab fa-medium"></i>
+              <h3 class="mb-1 text-lg font-bold text-white">Medium</h3>
+              <p class="text-sm text-slate-300">Yes, I write blogs.</p>
+              <div
+                class="absolute inset-0 transition-all duration-300 bg-opacity-0 group-hover:ease-in-out rounded-xl"
+              ></div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/yansh.08?igsh=a2xtOGVyZ3EzajBo"
+              target="_blank"
+              class="relative flex flex-col items-center p-4 text-center transition duration-200 border bg-white/5 group border-white/20 rounded-xl backdrop-blur-lg hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            >
+              <i class="mb-2 text-5xl text-black-500 fab fa-instagram"></i>
+              <h3 class="mb-1 text-lg font-bold text-white">Instagram</h3>
+              <p class="text-sm text-slate-300">A meme, a laugh.</p>
+              <div
+                class="absolute inset-0 transition-all duration-300 bg-opacity-0 group-hover:ease-in-out rounded-xl"
+              ></div>
+            </a>
+
+            <a
+              href="https://t.me/waytozero"
+              target="_blank"
+              class="relative flex flex-col items-center p-4 text-center transition duration-200 border bg-white/5 group border-white/20 rounded-xl backdrop-blur-lg hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            >
+              <i class="mb-2 text-5xl fab fa-telegram" aria-hidden="true"></i>
+              <h3 class="mb-1 text-lg font-bold text-white">Telegram</h3>
+              <p class="text-sm text-slate-300">3AM thoughts.</p>
+              <div
+                class="absolute inset-0 transition-all duration-300 bg-opacity-0 group-hover:ease-in-out rounded-xl"
+              ></div>
+            </a>
+
+            <a
+              href="https://t.me/+2tnhLu0ob5gyNGZl"
+              target="_blank"
+              class="relative flex flex-col items-center p-4 text-center transition duration-200 border bg-white/5 group border-white/20 rounded-xl backdrop-blur-lg hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            >
+              <i
+                class="mb-2 text-5xl fa-solid fa-camera"
+                aria-hidden="true"
+              ></i>
+              <h3 class="mb-1 text-lg font-bold text-white">Captures</h3>
+              <p class="text-sm text-slate-300">Me and my realme.</p>
+              <div
+                class="absolute inset-0 transition-all duration-300 bg-opacity-0 group-hover:ease-in-out rounded-xl"
+              ></div>
+            </a>
+
+            <a
+              href="https://www.hackerrank.com/profile/pksingh69313"
+              target="_blank"
+              class="relative flex flex-col items-center p-4 text-center transition duration-200 border bg-white/5 group border-white/20 rounded-xl backdrop-blur-lg hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            >
+              <i class="mb-2 text-5xl fab fa-hackerrank" aria-hidden="true"></i>
+              <h3 class="mb-1 text-lg font-bold text-white">Hackerrank</h3>
+              <p class="text-sm text-slate-300">Practice ground.</p>
+              <div
+                class="absolute inset-0 transition-all duration-300 bg-opacity-0 group-hover:ease-in-out rounded-xl"
+              ></div>
+            </a>
+
+            <a
+              href="https://youtube.com/playlist?list=PLblFJxIsmfNOXponUc8b03dBguF75-Lot&si=Ltx-xCgNT2HogUCA"
+              target="_blank"
+              class="relative flex flex-col items-center p-4 text-center transition duration-200 border bg-white/5 group border-white/20 rounded-xl backdrop-blur-lg hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            >
+              <i
+                class="mb-2 text-5xl fa-brands fa-youtube"
+                aria-hidden="true"
+              ></i>
+              <h3 class="mb-1 text-lg font-bold text-white">YT Music</h3>
+              <p class="text-sm text-slate-300">My music taste.</p>
+              <div
+                class="absolute inset-0 transition-all duration-300 bg-opacity-0 group-hover:ease-in-out rounded-xl"
+              ></div>
+            </a>
+
+            <a
+              href="mailto:pksingh69313@gmail.com"
+              target="_blank"
+              class="relative flex flex-col items-center p-4 text-center transition duration-200 border bg-white/5 group border-white/20 rounded-xl backdrop-blur-lg hover:scale-95 hover:ease-in-out hover:shadow-lg"
+            >
+              <i class="mb-2 text-5xl fa fa-envelope" aria-hidden="true"></i>
+              <h3 class="mb-1 text-lg font-bold text-white">Gmail</h3>
+              <p class="text-sm text-slate-300">Consider sending a mail.</p>
+              <div
+                class="absolute inset-0 transition-all duration-300 bg-opacity-0 group-hover:ease-in-out rounded-xl"
+              ></div>
+            </a>
+          </div>
+        </section>
+        <!-- ✨ Centered Divider Line -->
+        <div class="relative mt-20 h-[2px] w-full flex justify-center">
+          <div class="absolute w-full h-[2px]"></div>
+          <div class="absolute w-80 h-[2px] bg-white rounded-full"></div>
+        </div>
+
+        <section
+          id="contact"
+          class="w-full px-4 bg-transparent py-16 text-white sm:px-8 md:px-12 pt-[5.5rem] panel"
+        >
+          <div
+            class="flex flex-col items-start justify-between max-w-4xl gap-12 mx-auto md:flex-row"
+          >
+            <!-- Left Text Side -->
+            <div class="px-8 md:w-1/2">
+              <h2
+                class="text-3xl font-bold leading-relaxed font-heading sm:text-4xl"
+              >
+                Have any suggestions or project idea?
+              </h2>
+              <p class="mt-4 text-lg text-purple-400 glowing-text">
+                Let's grow together. Feel free to reach.
+              </p>
+            </div>
+
+            <!-- Right Form Side -->
+            <form
+              action="https://formspree.io/f/myzjzokb"
+              method="POST"
+              id="contactForm"
+              class="w-full px-8 space-y-6 md:w-1/2"
+            >
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Your Name"
+                class="w-full p-2 pb-2 placeholder-gray-700 border rounded-lg bg-white/5 placeholder:text-white font-body border-white/20 backdrop-blur-lg focus:outline-none focus:border-white"
+              />
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Your Email"
+                class="w-full p-2 pb-2 placeholder-gray-700 border rounded-lg bg-white/5 placeholder:text-white font-body border-white/20 backdrop-blur-lg focus:outline-none focus:border-white"
+              />
+              <textarea
+                rows="4"
+                name="message"
+                required
+                placeholder="Your Message"
+                class="w-full p-2 pb-2 placeholder-gray-700 border rounded-lg bg-white/5 placeholder:text-white font-body border-white/20 backdrop-blur-lg focus:outline-none focus:border-white"
+              ></textarea>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="px-6 py-2 mt-6 text-white transition-all duration-300 border bg-white/5 border-white/20 backdrop-blur-lg rounded-2xl"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- ✨ Centered Divider Line -->
+          <div class="relative mt-20 h-[2px] w-full flex justify-center">
+            <div class="absolute max-w-4xl h-[2px]"></div>
+            <div class="absolute w-80 h-[2px] bg-white rounded-full"></div>
+          </div>
+
+          <!-- ✅ Toast Message -->
+          <div
+            id="toast"
+            class="fixed px-6 py-3 text-black transition-opacity duration-500 transform -translate-x-1/2 bg-white rounded-full shadow-lg opacity-0 pointer-events-none bottom-8 left-1/2"
+          >
+            Thank you! Your message has been sent.
+          </div>
+        </section>
+        <footer class="max-w-4xl px-4 mx-auto text-slate-400 sm:px-6 lg:px-24">
+          <div class="container mx-auto">
+            <div
+              class="grid grid-cols-1 gap-6 p-4 md:grid-cols-2 lg:grid-cols-3"
+            >
+              <!-- Connect Section -->
+              <div
+                class="flex flex-col items-center text-center md:items-start md:text-left"
+              >
+                <h3 class="mb-4 text-xl font-bold text-white font-heading">
+                  Connect with Me
+                </h3>
+                <div class="flex gap-4 mb-6 sm:mb-8">
+                  <!-- GitHub -->
+                  <a
+                    href="https://github.com/yansh07"
+                    class="p-2 transition duration-200 bg-transparent border rounded-lg backdrop-blur-lg shadow-slate-400 border-white/20 hover:ease-in-out hover:scale-95 hover:bg-transparent"
+                    aria-label="GitHub"
+                  >
+                    <i class="text-3xl text-white fab fa-github"></i>
+                  </a>
+                  <!-- LinkedIn -->
+                  <a
+                    href="https://www.linkedin.com/in/priyanshu-kumar-singh-34560816b/"
+                    class="p-2 transition duration-200 bg-transparent border rounded-lg backdrop-blur-lg shadow-slate-400 border-white/20 hover:ease-in-out hover:scale-95 hover:bg-transparent"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="text-3xl text-white fab fa-linkedin"></i>
+                  </a>
+                  <!-- Email -->
+                  <a
+                    href="mailto:pksingh69313@gmail.com"
+                    class="p-2 transition duration-200 bg-transparent border rounded-lg backdrop-blur-lg shadow-slate-400 border-white/20 hover:ease-in-out hover:scale-95 hover:bg-transparent"
+                    aria-label="Email"
+                  >
+                    <i class="text-3xl text-white fa fa-envelope"></i>
+                  </a>
+                </div>
+
+                <!-- Stack Info -->
+                <div class="space-y-2 text-sm">
+                  <p
+                    class="flex items-center justify-center gap-2 md:justify-start hover:text-white hover:ease-in-out"
+                  >
+                    Built with
+                    <i class="text-blue-400 fas fa-hammer"></i> Custom HTML
+                  </p>
+                  <p
+                    class="flex items-center justify-center gap-2 md:justify-start hover:text-white hover:ease-in-out"
+                  >
+                    Styled with
+                    <i class="text-blue-500 fab fa-css3-alt"></i> Tailwind CSS
+                  </p>
+                  <p
+                    class="flex items-center justify-center gap-2 md:justify-start hover:text-white hover:ease-in-out"
+                  >
+                    Deployed on
+                    <i class="text-green-400 fas fa-globe"></i> GitHub Pages
+                  </p>
+                </div>
+              </div>
+
+              <!-- Playlist Section -->
+              <div
+                class="flex flex-col gap-4 text-center lg:px-12 lg:space-x-20 md:col-span-1 lg:col-span-2 md:text-left"
+              >
+                <!-- Add gap on small screens -->
+                <div class="h-2 sm:h-2 sm:-mt-8"></div>
+
+                <h3 class="mb-2 text-xl font-bold text-white font-heading">
+                  My Favorite Playlist
+                </h3>
+                <div
+                  class="w-64 h-40 max-w-sm sm:max-w-xs md:max-w-md lg:max-w-[448px] p-2 bg-transparent border rounded-lg backdrop-blur-lg border-white/50 mx-auto"
+                  style="
+                    box-shadow: 0 0 10px #ffffff,
+                      0 0 30px rgba(105, 71, 209, 0.2),
+                      0 0 45px rgba(255, 255, 255, 0.1);
+                  "
+                >
+                  <div
+                    class="relative overflow-hidden rounded-md aspect-[16/9]"
+                  >
+                    <iframe
+                      src="https://www.youtube.com/embed/videoseries?si=etPqjHW0-yr6N7FU&amp;list=PLblFJxIsmfNMBYATfNlBm3EDcauHzhZmR"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                      class="absolute top-0 left-0 w-full h-full rounded-md"
+                      loading="lazy"
+                      aria-label="YouTube Playlist"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div
+              class="pt-8 pb-6 mt-12 text-sm text-center border-t text-slate-500 border-white/50"
+            >
+              &copy; <span id="current-year"></span> Priyanshu Kumar Singh. All
+              rights reserved.
+            </div>
+          </div>
+        </footer>
+
+        <script>
+          // Script to update the current year in the footer
+          document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+        </script>
+      </div>
       <script>
-        // Script to update the current year in the footer
-        document.getElementById("current-year").textContent =
-          new Date().getFullYear();
+        const form = document.getElementById("contactForm");
+        const toast = document.getElementById("toast");
+
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const data = new FormData(form);
+          const action = form.action;
+
+          const response = await fetch(action, {
+            method: "POST",
+            body: data,
+            headers: {
+              Accept: "application/json",
+            },
+          });
+
+          if (response.ok) {
+            toast.classList.remove("opacity-0");
+            toast.classList.add("opacity-100");
+
+            setTimeout(() => {
+              toast.classList.remove("opacity-100");
+              toast.classList.add("opacity-0");
+            }, 3000);
+
+            form.reset();
+          }
+        });
+      </script>
+      <script>
+        function updateGreeting() {
+          const date = new Date();
+          const hour = date.getHours();
+          let greeting;
+          if (hour >= 5 && hour < 12) {
+            greeting = "Good morning 🌞.";
+          } else if (hour >= 12 && hour < 17) {
+            greeting = "Good afternoon ☀️.";
+          } else if (hour >= 17 && hour < 21) {
+            greeting = "Good evening 🌄.";
+          } else {
+            greeting = "Hello 🌙."; // Default for late night/early morning
+          }
+
+          const greetingElement = document.getElementById("greetingText");
+          if (greetingElement) {
+            greetingElement.textContent = greeting + " I'm,";
+          }
+        }
+
+        updateGreeting();
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+      <script>
+        VanillaTilt.init(document.querySelectorAll(".tilt-box"), {
+          max: 15,
+          speed: 400,
+          glare: false,
+          "max-glare": 0.2,
+          scale: 1.08,
+        });
+      </script>
+      <script>
+        window.addEventListener("scroll", () => {
+          const bg = document.querySelector(".animate-gradientMove");
+          if (bg) {
+            bg.style.backgroundPosition = `center ${window.scrollY * 0.2}px`;
+          }
+        });
       </script>
     </div>
-    <script>
-      const form = document.getElementById("contactForm");
-      const toast = document.getElementById("toast");
-
-      form.addEventListener("submit", async function (e) {
-        e.preventDefault();
-
-        const data = new FormData(form);
-        const action = form.action;
-
-        const response = await fetch(action, {
-          method: "POST",
-          body: data,
-          headers: {
-            Accept: "application/json",
-          },
-        });
-
-        if (response.ok) {
-          toast.classList.remove("opacity-0");
-          toast.classList.add("opacity-100");
-
-          setTimeout(() => {
-            toast.classList.remove("opacity-100");
-            toast.classList.add("opacity-0");
-          }, 3000);
-
-          form.reset();
-        }
-      });
-    </script>
-    <script>
-      function updateGreeting() {
-        const date = new Date();
-        const hour = date.getHours();
-        let greeting;
-        if (hour >= 5 && hour < 12) {
-          greeting = "Good morning 🌞.";
-        } else if (hour >= 12 && hour < 17) {
-          greeting = "Good afternoon ☀️.";
-        } else if (hour >= 17 && hour < 21) {
-          greeting = "Good evening 🌄.";
-        } else {
-          greeting = "Hello 🌙."; // Default for late night/early morning
-        }
-
-        const greetingElement = document.getElementById("greetingText");
-        if (greetingElement) {
-          greetingElement.textContent = greeting + " I'm,";
-        }
-      }
-
-      updateGreeting();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
-    <script>
-      VanillaTilt.init(document.querySelectorAll(".tilt-box"), {
-        max: 15,
-        speed: 400,
-        glare: false,
-        "max-glare": 0.2,
-        scale: 1.08,
-      });
-    </script>
-    <script>
-      window.addEventListener("scroll", () => {
-        const bg = document.querySelector(".animate-gradientMove");
-        if (bg) {
-          bg.style.backgroundPosition = `center ${window.scrollY * 0.2}px`;
-        }
-      });
-    </script>
   </body>
 </html>
