@@ -107,7 +107,7 @@ module.exports = {
         },
         marquee: {
           "0%": { transform: "translateX(40%)" },
-          "100%": { transform: "translateX(-80%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
         blur: {
           "0%, 100%": { filter: "blur(0px)", opacity: "1" },
